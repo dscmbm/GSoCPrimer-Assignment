@@ -1,1 +1,39 @@
-ADD Web Development Answers here.
+<!--HTML-->
+<!--Q.1-->
+<p>Select your City!</p>
+<input type="checkbox" value="Delhi" class="delhi">Delhi</input>
+<input type="checkbox" value="Mumbai" class="Mumbai">Mumbai</input>
+<input type="checkbox" value="Goa" class="Goa">Goa</input>
+<input type="checkbox" value="Chennai" class="Chennai">Chennai</input>
+<!--Q.2-->
+<pre>Hey everyone               
+     I am Vedika Sharma    FRom AI&DS   
+</pre>
+<!--Q.3-->
+<a href="https://www.google.co.in/" target="_blank">google</a>
+<!--Q.4-->
+<form action="action.php">
+    <p>what is your name?</p>
+    <input type="text" placeholder="write your name here"></input>
+    <p>Have you ever donated blood?</p>
+    <input type="text" placeholder="write your answer here"></input><br>
+    <button>submit</button>
+</form>
+<!--Q.5-->
+<ul>
+    <li>coffee</li>
+    <li>tea</li>
+    <li>milk</li>
+</ul>
+<!--CSS-->
+<!--Q.3-->
+    display:none;
+    visibility:hidden; 
+
+<!--Q.4-->
+360 px
+<!--JS-->
+<!--Q.1-->
+#id{
+    
+}
