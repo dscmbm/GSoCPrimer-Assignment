@@ -1,1 +1,143 @@
 ADD Competitive Programming answers here.
+#include<iostream>
+using namespace std;
+int main()
+{
+    // Q.1
+    int A, B;
+    cout << "Enter two numbers: ";
+    cin >> A >> B;
+    cout << "Multiplication: " << A*B << endl;
+    // Q.2
+    int A;
+    cin >> A;
+    if(A%2==0)
+    {
+        cout << "Even" << endl;
+    }
+    else
+    {
+        cout << "Odd" << endl;
+    }
+    // Q.3
+    int A;
+    int factorial(int A)
+    {
+        if(A==0 || A==1)
+        {
+            cout << 1 << endl;
+        }
+        else
+        {
+            return A*factorial(A-1);
+        }
+    }
+    int main()
+    {
+        int k;
+        K = factorial(5);
+        cout << "Factorial is: " << k << endl;
+    }
+    // Q.4
+int main()
+{
+    char line[150];
+    int vowels, consonants, digits, spaces;
+
+    vowels =  consonants = digits = spaces = 0;
+
+    cout << "Enter a line of string: ";
+    cin.getline(line, 150);
+    for(int i = 0; line[i]!='\0'; ++i)
+    {
+        if(line[i]=='a' || line[i]=='e' || line[i]=='i' ||
+           line[i]=='o' || line[i]=='u' || line[i]=='A' ||
+           line[i]=='E' || line[i]=='I' || line[i]=='O' ||
+               line[i]=='U')
+        {
+            ++vowels;
+        }
+        else if((line[i]>='a'&& line[i]<='z') || (line[i]>='A'&& line[i]<='Z'))
+        {
+            ++consonants;
+        }
+        else if(line[i]>='0' && line[i]<='9')
+        {
+            ++digits;
+        }
+        else if (line[i]==' ')
+        {
+            ++spaces;
+        }
+    }
+
+    cout << "Vowels: " << vowels << endl;
+    cout << "Consonants: " << consonants << endl;
+    cout << "Digits: " << digits << endl;
+    cout << "White spaces: " << spaces << endl;
+
+    return 0;
+}
+
+    // Q.5
+    int main()
+    {
+        int arr[] = {3, 7, 1, 9, 5};
+        int arrSize = sizeof(arr) / sizeof(arr[0]);
+        int maxNumber = max_element(arr, arr + arraySize);
+        cout << "Maximum number in the array is: " << maxNumber << endl;
+    }
+    //Q.6
+    int main()
+    {
+        int arr[] = {3, 7, 1, 9, 5};
+        int arrSize = sizeof(arr) / sizeof(arr[0]);
+        int minNumber = min_element(arr, arr + arraySize);
+        cout << "Minimum number in the array is: " << minNumber << endl;
+    }
+    // Q.7
+    int main()
+    {
+        int A, B, C;
+        cin >> A >> B;
+        cout << "Before swaping: " << A << B << endl;
+        C=B;
+        B=A;
+        A=C;
+        cout << "After swaping: " << A << B << endl; 
+    }
+    // Q.8
+    int main()
+    int year;
+    cin >> year;
+    if((year%4==0 && year%100 !=0)|| year%100==0)
+    {
+        cout << "Leap year" << endl;
+    }
+    else
+    {
+        cout << "Not a leap year." << endl;
+    }
+    // Q.9
+    int main()
+    {
+        string str;
+        cout << "Enter a string: " << endl;
+        cin >> str;
+        reverse(str.begin(), str.end());
+        cout << str << endl;
+    }
+    // Q.10
+    int main()
+    {
+        int A, B, C;
+        cout << "Enter integers: " << endl;
+        cin >> A >> B >> C;
+        int maxNumber = (A>B) ? (A>C ? A:C):(B>C ? B:C);
+        cout << maxNumber << endl;
+    }
+    // MCQs Answers
+    // 1(A) O(N), 2(B) Stack, 3(B) Exit the loop, 4(A) Must be sorted, 
+    // 5(B) The Number of operations it performs... 
+    return 0; 
+}
