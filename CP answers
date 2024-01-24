@@ -1,1 +1,216 @@
 ADD Competitive Programming answers here.
+Question 1: #include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a,b;
+   cin>>a>>b;
+   cout<<a*b<<endl;
+
+    return 0;
+} 
+question 2:
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a;
+   cout<<"Enter a number: "<<endl;
+   cin>>a;
+   if(a%2==0)
+   cout<<"Number is even "<<endl;
+   else
+   cout<<"Number is odd "<<endl;
+
+    return 0;
+}
+question 3:
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a;
+   cout<<"Enter a number: "<<endl;
+   cin>>a;
+   int fact=1;
+   for(int i=1;i<=a;i++)
+   {
+       fact=fact*i;
+   }
+   cout<<fact<<endl;
+   
+    return 0;
+}
+question 4:
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+    //char str[100] = "Vandanasaini";
+    string str;
+    cin>>str;
+    int vowels = 0;
+    
+    
+    for(int i = 0; str[i]; i++)  
+    {
+        if(str[i]=='a'|| str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'
+        ||str[i]=='A'||str[i]=='E'||str[i]=='I'||str[i]=='O' ||str[i]=='U')
+        {
+		    vowels++;
+        }
+    }
+    
+    cout << "Total Vowels : " << vowels;
+    
+    return 0;
+}
+question 5:
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int n;
+   cout<<"Enter a number in array: "<<endl;
+   cin>>n;
+   int max=0;
+   int  arr[n];
+   for(int i=0;i<n;i++){
+       cin>>arr[i];
+   }
+   for(int i=0;i<n;i++)
+   {
+       if(max<arr[i])
+       {
+           max=arr[i];
+       }
+       else
+       {
+           max=max;
+       }
+       
+   }
+   cout<<max;
+    return 0;
+}
+Question 6: 
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int n;
+   cout<<"Enter a number in array: "<<endl;
+   cin>>n;
+   int min=99;
+   int  arr[n];
+   for(int i=0;i<n;i++){
+       cin>>arr[i];
+   }
+   for(int i=1;i<n;i++)
+   {
+       if(min>arr[i])
+       {
+           min=arr[i];
+       }
+       else
+       {
+           min=min;
+       }
+       
+   }
+   cout<<min;
+    return 0;
+}
+Question 7:
+#include <iostream>
+using namespace std;
+
+int main() {
+int a,b,c;
+cin>>a>>b;
+c=a;
+a=b;
+b=c;
+cout<<a<<" "<<b;
+
+return 0;}
+
+Question 8:
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  int year;
+  cout << "Enter a year: ";
+  cin >> year;
+
+  if (year % 400 == 0) {
+    cout << year << " is a leap year.";
+  }
+ 
+  else if (year % 100 == 0) {
+    cout << year << " is not a leap year.";
+  }
+  
+  else if (year % 4 == 0) {
+    cout << year << " is a leap year.";
+  }
+  
+  else {
+    cout << year << " is not a leap year.";
+  }
+
+  return 0;
+}
+question 9:
+
+#include<iostream>
+#include <algorithm> 
+#include<string>
+using namespace std; 
+int main() 
+{ 
+    string str = "i am from mbm university"; 
+    reverse(str.begin(), str.end()); 
+	cout<<"\n"<<str; 
+    return 0;
+}
+ question 10:
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a,b,c;
+   cout<<"Enter three  number: "<<endl;
+   cin>>a>>b>>c;
+   if(a>b && a>c )
+   cout<<a;
+   else if(b> a && b>c)
+   cout<<b;
+   else
+   cout<<c;
+   
+    return 0;
+}
