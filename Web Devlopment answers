@@ -1,1 +1,69 @@
-ADD Web Development Answers here.
+Question 1: Create a checkbox input feild in HTML
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+<title>anskey1 </title>
+</head>
+<body>
+<h1>What is your fav food.</h1>
+<label for="myCheckbox">Smosa</label>
+<input type="checkbox" id="myCheckbox" name="myCheckbox">
+<label for="myCheckbox">Banana</label>
+<input type="checkbox" id="myCheckbox" name="myCheckbox">
+</body>
+</html>
+
+
+
+Question 3: How to create a hyperlink that opens in a new tab?
+Code: 
+<!DOCTYPE html>
+<html>
+<head>
+<title>anskey3 </title>
+</head>
+<body>
+<a href="#" target="_blank">Click here to open in a new tab</a>
+</body>
+</html>
+
+Question 4: Implement a basic form with a text input and a submit button.
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+<title>anskey 4 </title>
+</head>
+<body>
+<h2>Basic Form sumbition</h2>
+<form>
+    <p>name
+        <input type="name" id="myCheckbox" name="name">
+    </p>
+   <input type="submit">
+      
+</form>
+</body>
+</html>
+
+Question 5:Create an unordered list containing items - coffee, tea, milk
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+<title>anskey 5 </title>
+</head>
+<body>
+<h2>Create an unordered list containing items - coffee, tea, milk</h2>
+<ul>
+<li>Coffee</li>
+<li>tea</li>
+<li>milk</li>
+</ul>
+</body>
+</html>
+
+
+
+
