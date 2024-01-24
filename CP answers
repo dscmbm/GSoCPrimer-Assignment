@@ -1,1 +1,147 @@
 ADD Competitive Programming answers here.
+MCQ Question:- 
+1. (A)
+2. (A)
+3. (B)
+4. (A)
+5. (C) 
+
+CODING QUESTION:- 
+
+1. C CODE : 
+#include<stdio.h> 
+int main(){
+
+    int a,b; 
+    printf("Enter the first integer: "); 
+    scanf("%d",&a); 
+    printf("\n"); 
+    
+    printf("Enter the second integer: "); 
+    scanf("%d",&b); 
+    printf("\n"); 
+    
+    int prod ; 
+    prod=a*b; 
+    printf("Product:%d ",prod); 
+    
+    return 0; 
+}
+
+2. C CODE: 
+#include<stdio.h> 
+int main(){
+
+    int num;
+    printf("Enter the number :");
+    scanf("%d",&num); 
+    if (num%2==0) printf("\nNumber is even."); 
+    else  printf("\nNumber is odd.");  
+
+    return 0; 
+}
+
+3. C CODE : 
+#include<stdio.h> 
+
+int fac(int num){
+    if (num==1) return 1; 
+    else {
+        num=num*fac(num-1); 
+        return num; 
+    }
+}
+int main(){
+int n; 
+printf("Enter the number:"); 
+scanf("%d",&n); 
+if (n==0) printf("\nThe factorial is 1"); 
+
+else if (n<0) printf("\nInvalid input.\n"); 
+
+else{
+    n=fac(n); 
+    printf("\nThe factorial is :%d",n);
+    } 
+
+return 0; 
+}
+
+4. PYTHON CODE: 
+
+st=input("Enter the string:")
+vo="aeiouAEIOU"
+c=0
+for i in st: 
+    if i in vo: 
+        c+=1 
+    else : continue 
+    
+print("The number of vowels in the given string:",c)
+
+5. PYTHON CODE : 
+
+st=list(map(int,input().split()))
+print("Maximum number:",max(st))
+
+6. PYTHON CODE : 
+
+st=list(map(int,input().split()))
+print("Minimum number:",min(st))
+
+7. C CODE : 
+
+#include<stdio.h>
+int main(){
+    int a,b,temp; 
+    printf("Enter the first number: "); 
+    scanf("%d",&a); 
+    printf("Enter the second number: "); 
+    scanf("%d",&b); 
+    temp=a; 
+    a=b; 
+    b=temp; 
+    printf("\nNow the first number is %d",a); 
+    printf(" and the second number is %d",b); 
+    return 0 ; 
+}
+
+8. C CODE: 
+#include<stdio.h> 
+int main(){
+    
+    int year; 
+    printf("Enter the year: "); 
+    scanf("%d",&year); 
+    if (year%4==0) printf("The given year is leap year ."); 
+    else printf("The given year is not leap year ."); 
+    return 0; 
+}
+
+10. C CODE : 
+#include<stdio.h> 
+int main(){
+    int a,b,c;
+    printf("Enter the first number: ");
+    scanf("%d",&a); 
+    printf("Enter the second number: ");
+    scanf("%d",&b); 
+    printf("Enter the third number: ");
+    scanf("%d",&c); 
+    
+    if (a>b){
+        if (a>c){
+            printf("%d is the biggest",a); 
+            
+        }
+        else printf("%d is the biggest",c); 
+    }
+    
+    else {
+        if (b>c){
+            printf("%d is the biggest",b); 
+        }
+        else printf("%d is the biggest",c); 
+    }
+    return 0 ; 
+}
