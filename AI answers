@@ -1,1 +1,93 @@
-ADD Artificial Intelligence answers here.
+# ADD Artificial Intelligence answers here.
+def is_prime(number):
+    if number < 2:
+        return False
+    
+    for i in range(2, int(number**0.5) + 1):
+        if number % i == 0:
+            return False  
+    
+    return True  
+
+num_to_check = 17
+if is_prime(num_to_check):
+    print(f"{num_to_check} is a prime number")
+else:
+    print(f"{num_to_check} is not a prime number")
+
+# Question 2:
+
+def reverse(string):
+    return string[::-1]
+
+string = "Hello, World!"
+reversed_string = reverse(string)
+print(f"Original String: {string}")
+print(f"Reversed String: {reversed_string}")
+
+# Question 3:
+import pandas as pd
+
+data = {
+    'Name': ['John', 'Alice'],
+    'Age': [25, 30]
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+
+# Question 4:
+import numpy as np
+
+matrix = np.arange(1, 10).reshape(3, 3)
+print(matrix)
+
+# Question 5:
+def get_sorted_keys(dict):
+    sorted_keys = sorted(dict.keys())
+    return sorted_keys
+
+dict = {'b': 2, 'a': 1, 'c': 3}
+sorted_keys = get_sorted_keys(dict)
+
+print("Original Dictionary:", dict)
+print("Sorted Keys:", sorted_keys)
+
+# Question 6:
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+number_to_factorial = 5
+result = factorial(number_to_factorial)
+
+print(f"The factorial of {number_to_factorial} is: {result}")
+
+#  Question 7:
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+mean_value = np.mean(arr)
+std_deviation = np.std(arr)
+
+print("Array:", arr)
+print("Mean:", mean_value)
+print("Standard Deviation:", std_deviation)
+
+# Question 8:
+import pandas as pd
+
+data = {'A': [1, 2, 3, 4, 5],
+        'B': [8, 12, 15, 9, 10]}
+
+df = pd.DataFrame(data)
+
+sumcol_A = df.loc[df['B'] > 10, 'A'].sum()
+
+print("DataFrame:")
+print(df)
+print("Sum of column 'A' for rows where column 'B' is greater than 10:", sumcol_A)
+
