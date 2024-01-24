@@ -1,1 +1,46 @@
 ADD Competitive Programming answers here.
+Q1. WAP  which multiplies two integers  A and B . 
+//Program to Multiplication of two numbers
+#include<stdio.h>
+int main()
+{
+	int num1,num2,Result;
+	printf("Enter two numbers:");
+	scanf("%d %d",&num1,&num2);
+	Result=num1*num2;
+	printf("Result of two numbers: %d",Result);
+	return  0;
+}
+
+
+Q2. WAP which finds whether number is EVEN or ODD.
+
+
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    // true if num is perfectly divisible by 2
+    if(num % 2 == 0)
+        printf("%d is even.", num);
+    else
+        printf("%d is odd.", num);
+    
+    return 0;
+}
+
+Q3. WAP which find factorial of a number N.
+#include<stdio.h>  
+int main()    
+{    
+ int i,fact=1,number;    
+ printf("Enter a number: ");    
+  scanf("%d",&number);    
+    for(i=1;i<=number;i++){    
+      fact=fact*i;    
+  }    
+  printf("Factorial of %d is: %d",number,fact);    
+return 0;  
+}   
