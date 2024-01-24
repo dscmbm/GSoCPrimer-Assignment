@@ -1,1 +1,170 @@
 ADD Competitive Programming answers here.
+ADD Competitive Programming answers here.
+Q1>
+  #include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+    cout<<"enter two numbers"<<endl;
+    int a,b;
+    cin>>a>>b;
+    cout<<a*b;
+
+    return 0;
+}
+
+Q2>
+    #include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+    cout<<"enter a number : ";
+    int n;
+    cin>>n;
+    if((n%2)==0){
+        cout<<n<<" is a even number"<<endl;
+    }else{
+        cout<<n<<" is a odd number"<<endl;
+    }
+
+    return 0;
+}
+
+Q3>
+#include <iostream>
+using namespace std;
+int fact(int n){
+        if(n==1){
+            return 1;
+        }else{
+            return n*fact(n-1);
+        }
+    }
+int main() {
+    // Write C++ code here
+    int n;
+    cin>>n;
+    
+    cout<<fact(n)<<endl;
+}
+
+Q4>
+#include <iostream>
+using namespace std;
+int main() {
+    string s;
+    int count=0;
+    cout<<"enter your name = ";
+    cin>>s;
+    for(int i=0;i<s.length();i++){
+        if(s[i]=='a' || s[i]=='i' || s[i]=='o' || s[i]=='u' || s[i]=='e'){
+            count++;
+        }else if(s[i]=='A' || s[i]=='I' || s[i]=='O' || s[i]=='U' || s[i]=='E'){
+            count++;
+        }
+    }
+    cout<<"No. of vowels = "<<count;
+}
+
+Q5>
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[] = {1,2,3,4,9,5};
+    int m=arr[0];
+    int size = sizeof(arr)/sizeof(arr[0]);
+    for(int i=1;i<size;i++){
+        if(m<arr[i]){
+            m=arr[i];
+        }
+    }
+    cout<<m;
+}
+
+Q6>
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[] = {1,2,3,4,9,5};
+    int m=arr[0];
+    int size = sizeof(arr)/sizeof(arr[0]);
+    for(int i=1;i<size;i++){
+        if(m>arr[i]){
+            m=arr[i];
+        }
+    }
+    cout<<m;
+}
+
+Q7>
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"enter two number"<<endl;
+    int a,b,temp;
+    cin>>a>>b;
+    
+    cout<<"a = "<<a<<endl;
+    cout<<"b = "<<b<<endl<<endl;
+    
+    cout<<"after swapping"<<endl;
+    temp=a;
+    a=b;
+    b=temp;
+    
+    cout<<"a = "<<a<<endl;
+    cout<<"b = "<<b<<endl<<endl;
+    
+}
+
+Q8>
+    #include <iostream>
+using namespace std;
+int main() {
+    cout<<"enter a year = ";
+    int year;
+    cin>>year;
+    if((year%4==0 && year%100!=0) || year%400==0){
+        cout<<"leap";
+    } else{
+        cout<<"not leap";
+    }
+}
+
+Q10>
+
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"enter three number"<<endl;
+    int a,b,c;
+    cin>>a>>b>>c;
+    if(a>b){
+        if(a>c){
+            cout<<a<<" is greater";
+        }else{
+            cout<<c<<" is greater";
+        }
+    }else if(b>c){
+        cout<<b<<" is greater";
+    }else{
+        cout<<c<<" is greater";
+    }
+}
+
+
+5 MCQ’s questions: 
+Q1>
+A) O(N)
+
+Q2>
+B) Stack
+
+Q3>
+B) Exit the loop
+
+Q4>
+A) Must be sorted
+
+Q5>
+C) The execution speed on a specific machine
