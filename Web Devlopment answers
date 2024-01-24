@@ -1,1 +1,12 @@
-ADD Web Development Answers here.
+WEBD: QUESTION 1
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            page title
+        </title>
+    </head>
+    <body>
+       <input type="checkbox" value="Hello">
+    </body>
+</html>
