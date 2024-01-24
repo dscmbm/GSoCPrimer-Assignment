@@ -1,5 +1,5 @@
 Question 1: Create a checkbox input feild in HTML
-Answer:
+Code:
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +17,7 @@ Answer:
 
 
 Question 3: How to create a hyperlink that opens in a new tab?
-Answer: 
+Code: 
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +29,7 @@ Answer:
 </html>
 
 Question 4: Implement a basic form with a text input and a submit button.
-Answer:
+Code:
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,7 +48,7 @@ Answer:
 </html>
 
 Question 5:Create an unordered list containing items - coffee, tea, milk
-Answer:
+Code:
 <!DOCTYPE html>
 <html>
 <head>
