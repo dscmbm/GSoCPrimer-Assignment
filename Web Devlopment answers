@@ -1,2 +1,9 @@
 ADD Web Development Answers here.
 1. <input type="checkbox" name="checkbox" id="checkbox"/>
+2.<pre>
+    Text in a pre element
+  	is displayed in a fixed-width
+  font, and it preserves
+  both      spaces and
+  line breaks
+</pre>
