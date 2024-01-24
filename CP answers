@@ -1,1 +1,154 @@
-ADD Competitive Programming answers here.
+//CP: Question 1
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int A=sc.nextInt();
+        int B=sc.nextInt();
+
+        System.out.println(A*B);
+    }
+}
+
+
+//CP: Question 2
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+
+        if(num%2==0){
+            System.out.println("Number is even");
+        }
+        else{
+            System.out.println("Number is odd");
+        }
+    }
+}
+
+
+//CP: Question 3
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int fact=1;
+
+        for(int i=2;i<=num;i++){
+            fact=fact*i;
+          }
+        System.out.println(fact);
+    }
+}
+
+
+//CP: Question 5
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+        int nums[]=new int[size];
+        int max=0;
+
+        for(int i=0;i<size;i++){
+            nums[i]=sc.nextInt();
+        }
+        
+        max=nums[0];
+
+        for(int i=1;i<size;i++){
+            if(nums[i]>max){
+                max=nums[i];
+            }
+        }
+        System.out.println(max);
+    }
+}
+
+
+//CP: Question 6
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+        int nums[]=new int[size];
+        int min=0;
+
+        for(int i=0;i<size;i++){
+            nums[i]=sc.nextInt();
+        }
+        min=nums[0];
+
+        for(int i=1;i<size;i++){
+            if(nums[i]<min){
+                min=nums[i];
+            }
+        }
+        System.out.println(min);
+    }
+}
+
+
+//CP: Question 7
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int A=sc.nextInt();
+        int B=sc.nextInt();
+        int temp=0;
+        
+        temp=A;
+        A=B;
+        B=temp;
+        
+        System.out.println(A);
+        System.out.println(B);
+    }
+}
+
+
+//CP: Question 10
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int A=sc.nextInt();
+        int B=sc.nextInt();
+        int C=sc.nextInt();
+        
+        if(A>B && A>C){
+            System.out.println(A);
+        }
+        else if(B>A && B>C){
+            System.out.println(B);
+        }
+        else{
+            System.out.println(C);
+        }
+    }
+}
+
+
+//CP: MCQ Question 1
+A) O(N)
+
+
+//CP: MCQ Question 2
+B) Stack
+
+
+//CP: MCQ Question 3
+B) Exit the loop
+
+
+//CP: MCQ Question 4
+A) Must be sorted
+
+
+//CP: MCQ Question 5
+B) The number of operations it performs
