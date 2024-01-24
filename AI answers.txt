@@ -1,0 +1,167 @@
+ADD Artificial Intelligence answers here.
+AI answers:
+
+Q.1 function for prime number:
+Ans:  def is_prime(n):
+           if n<2:
+               return 0
+           for i in range(2,int(num**5),1):
+               if num%i==0:
+                    return 0
+            return true
+
+
+Q.2 Write a Python function that takes a string 
+as input and returns the reversed version of the string?
+Ans: def rs(is):
+     return is[::-1]
+
+
+
+Q.3 Import Pandas and create a Data Frame with two columns - "Name" and "Age" 
+    containing data for two individuals?
+Ans: import pandas as pd
+     d= {
+        "Name"=["Sanju","Virat"],
+        "Age"=[21,34]
+     }
+     df=pd.DataFrame(d)
+     df   #in jupyter notebook we do print output in this way
+
+
+Q.4 Import NumPy and create a 3x3 matrix with values ranging from 1 to 9?
+Ans: import numpy as np
+     mat=np.arange(1,10).reshape(3,3)
+     print(mat)
+
+
+Q.5 Write a Python function that takes a dictionary as input 
+    and returns the keys in alphabetical order?
+Ans: def sort_key(dictionary):
+        new_key=sorted(dictionary.keys())
+        return new_key
+
+
+Q.6 Write a Python function that calculates the factorial of a
+     given number. Using recursion?
+Ans: def factorial(n):
+        if n==0 or n==1:
+            return 1
+        else:
+            return n*factorial(n-1)
+
+
+Q.7 Given a NumPy array arr, write code to find the mean 
+    and standard deviation of the array?
+Ans: import numpy as np
+     arr=np.array([2,1,45,5,8])
+     arr_mean= np.mean(arr)
+     arr_std= np.std(arr)
+     print(f"Mean:{arr_mean} and standard deviation: {arr_std} ")
+    
+
+Q.8 Given a Pandas DataFrame df with columns "A" and "B", 
+    write code to calculate the sum of column "A"
+    for rows where column "B" is greater than 10?
+Ans: import pandas as pd
+     data= {
+        "A":[2,4,6,7],
+        "B":[1,10,12,14]
+     }
+     sum_of_A= df.loc[df["B"]>10,A].sum()
+     print("sum of A when B is greater than A: ",sum_of_A)
+
+
+Q.9 Given a trained machine learning model, a feature matrix,
+    and corresponding labels , write code to calculate the accuracy
+    of the model on the test data.
+
+from sklearn.metrics import accuracy_score
+# Your code here
+model = # Trained machine learning model
+X_test = # Feature matrix for testing
+y_test = # True labels for testing
+
+# Calculate the accuracy of the model
+accuracy = # Your code here
+print("Accuracy:", accuracy)
+
+
+Ans: 
+    from sklearn.metrics import accuracy_score
+    from sklearn.model_selection import train
+
+
+
+
+Q 10 Write a Python function that removes duplicates from a given 
+    list and returns a new  list with unique elements.
+
+Ans: def duplicate(I_list):
+        unique=[]
+        for i in I_list:
+            if i not in unique:
+                unique.append(i)
+        return unique
+
+
+
+     
+
+
+Q.11 What is the purpose of the try, except, and finally blocks in Python?
+a) To define a function
+b) To handle errors and exceptions
+c) To create a loop
+d) To define a class
+
+Ans: b) to handle errors and exceptions
+
+
+
+
+
+12   How do you select the first three rows of a Pandas DataFrame df?
+a) df.head(3)
+b) df.first(3)
+c) df[:3]
+d) df.select(3)
+
+Ans: a) df.head(3)
+
+
+
+13 What metric is commonly used to evaluate classification models in Scikit-Learn?
+a) Mean Squared Error (MSE)
+b) R-squared
+c) Accuracy
+d) F1 Score
+
+Ans: c) Accuracy
+
+
+
+14 Consider the following Python code:
+text = "Hello, World!"
+result = text.split(", ")
+Which statements about the variable result are correct?
+a) result will be a list with two elements: ["Hello", "World!"].
+b) result will be a string: "Hello, World!".
+c) result will be a list with three elements: ["Hello", " World!"].
+d) result will be a list with one element: ["Hello, World!"].
+
+Ans: a) result will be a list with two elements: ["Hello", "World!"].
+
+
+
+15 Consider the following Python function:
+def manipulate_list(lst):
+    return [x * 2 for x in lst if x % 3 == 0]
+Which statements about the function are correct?
+a) The function doubles every element in the input list.
+b) The function filters out elements that are not divisible by 3.
+c) The function returns a new list.
+d) The function modifies the input list in-place.
+
+Ans: b) The function filters out elements that are not divisible by 3.
+     c) The function returns a new list.
