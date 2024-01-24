@@ -1,1 +1,48 @@
-ADD Artificial Intelligence answers here.
+AI Answers:
+import pandas as pd
+import numpy as np 
+def firstanswer():
+    a = int(input("enter the number"))
+    for i in(2,a):
+        if a %i==0:
+            print("it is not a prime number")
+            break
+        else :
+            print("it is a prime number")
+def secondanswer():
+    b= input("enter the string")
+    b=b[::-1]
+    print(b)
+def thirdanswer():
+    data = [['hercules', 69], ['thala', 7], ['darsil', 15]]
+    df = pd.DataFrame(data, columns=['Name', 'Age'])
+    print(df)
+def forthanswer():
+    t = np.arange(1, 10).reshape(3, 3)
+    print(t)
+def fifthanswer():
+    a={"thala":12,"Mayank":22,"prere":222}
+    aa = list(a.keys())
+    aa.sort()
+    print(aa)
+def sixthanswer():
+    def fact(a):
+        if a==1:
+            return 1
+        if a==0:
+            return 1
+        return fact(a-1)*a
+    b = fact(5)
+    print(b)
+def sevenanswer():
+    arr = np.arange(100) 
+    print(arr) 
+    a1 = np.mean(arr) 
+    print(a1) 
+    a2 = np.std(arr) 
+    print(a2)
+Sol 11. (b)
+Sol 12. (a)
+Sol 13. (b)
+Sol 14. (a)
+Sol 15. (b)
