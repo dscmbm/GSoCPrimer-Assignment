@@ -1,1 +1,106 @@
 ADD Competitive Programming answers here.
+Question 1)
+            int A=5,B=7;
+            int multiplyAB = A * B ;
+            System.out.println("The product of "+A+" and "+B+ " is :
+            "+multiplyAB);
+Question 2)
+            int num = 9;
+            if (num%2==0) {
+                System.out.println(num +" is Even Number");
+                }
+            else{
+                    System.out.println(num +" is Odd Number");
+            
+                }
+Question 3)
+                int n = 6;
+                long fact = 1;
+                for (int i = 1; i <=n; i++) {
+                    fact =fact*i;
+                    }
+                    System.out.println("Factorial of"+n+"is="+fact);
+                    }
+Question 3)
+                int n = 6;
+                long fact = 1;
+                for (int i = 1; i <=n; i++) {
+                    fact =fact*i;
+                    }
+                    System.out.println("Factorial of"+n+"is="+fact);
+                    }
+Question 4)
+                    String str ="MBM University";
+                    int count = 0;
+                    char ch;
+                    for (int i = 0; i <str.length(); i++) {
+                        ch = str.charAt(i);
+                        if (ch == 'a'|| ch == 'e'|| ch== 'i' || ch == 'o'|| ch == 'u')
+                        count++;
+                        }
+                        System.out.println("Number of Vowels in String are:"+count);
+Question 5)
+                       int arr[] = {34,89,65,39,7,45};
+                        int max=arr[0];
+                        for(int i=1;i<arr.length;i++){
+                            if(max<arr[i])
+                            max=arr[i];
+                            }System.out.println("Maximum element in Array is : "+max);
+Question 6)
+                            int min=arr[0];
+                            for(int i=1;i<arr.length;i++){
+                                if(min>arr[i])
+                                min=arr[i];
+                                }System.out.println("Minimum element in Array is: "+min);
+Question 7)
+                                int A=10;
+                                int B=5;
+                                System.out.println("Before Swapping");
+                                System.out.println("A = " + A);
+                                System.out.println("B = " + B);
+                                System.out.println("After Swapping");
+                                int temp = A;
+                                A = B;
+                                B = temp;
+                                System.out.println("A = " + A);
+                                System.out.println("B = " + B);
+Question 8)
+                               int yr=2000; 
+                               if((yr%4==0 && yr%100!=0) ||
+                               (yr%400==0))
+                               System.out.println(yr+" is Leap Year");
+                               else{
+                               System.out.println(yr+" is Not Leap Year");
+                               }
+Question 9)
+                               String s="Helloooo";
+                               char c[]=s.toCharArray();
+                               int n=c.length;
+                               for(int i=0,j=n-1;i<j;i
+                               ,j--){
+                                char temp=c[i];
+                                c[i]=c[j];
+                                c[j]=temp;
+                                }
+Question 10)
+                               int max_of_three=Math.max(10, Math.max(20 ,30));
+                               System.out.println("Maximum number among the three numbers is :"+ max_
+                               of_three);
+                               }
+Answers of MCQ
+Q1)
+ D) O(1)
+Q2)
+A) Queue
+Q3)
+B) Exit the loop
+Q4)
+A) Must be sorted
+Q5)
+B) The number of operations it performs
+
+
+
+
+
+
