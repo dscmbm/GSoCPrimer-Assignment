@@ -1,1 +1,255 @@
 ADD Competitive Programming answers here.
+
+
+#10 Coding Questions:
+#WAP( write a program )
+#Q1. WAP  which multiplies two integers  A and B . 
+
+#include <stdio.h>
+int main()
+{
+    int a,b;
+    printf("Input the value for a");scanf("%d",&a);
+    printf("Input the value for b");scanf("%d",&b);
+
+    printf("%d x %d = %d",a,b,a*b);
+}
+
+
+
+
+#Q2. WAP which finds whether number is EVEN or ODD
+
+#include <stdio.h>
+
+
+int main()
+{
+    int a;
+    printf("Input the value for a");scanf("%d",&a);
+    if (a%2)==0
+    {
+        printf("%d is  even number",a);
+        return 0;
+    }
+    printf("%d is odd number",a);
+}
+
+
+#Q3. WAP which find factorial of a number N.
+
+
+#include <stdio.h>
+
+int fact(int n)
+{
+    if (n==0 || n==1)
+        return 1;
+    else
+        return n*fact(n-1);
+    
+}
+int main()
+{
+    int a;
+    printf("Input the value for a");scanf("%d",&a);
+    print(fact(a));
+}
+
+#Q4. WAP which counts the number of vowels in a string.
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char str[100];
+    char vovel[5]={'a','e','i','o','u'};
+    int n=100,v =0,c = 0,ch = 1;
+    printf("enter str");scanf("%s",&str);
+    for (int i = 0;i<strlen(str);i++)
+    {
+
+        for (int j=0;j<5;j++)
+        {
+            if (str[i]==vovel[j])
+            {
+                v++;
+
+            }
+            
+        }
+
+        
+        
+        
+    }
+    
+
+    printf("number of vovels %d and consonants %d  in %s",v,strlen(str)-v,str);
+}
+
+#Q5. WAP which finds maximum number in an array.
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int arr[5]={10,4,50,6,60},num=0,i=0;
+    num = arr[i];
+    for (int i=0;i<5;i++)
+    {
+        
+        if (num < arr[i])
+            num = arr[i];
+        
+            
+        
+    }
+    printf("largest number is %d ",num);
+
+    return 0;
+}
+#Q6. WAP which finds minimum number in an array.
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int arr[5]={10,4,50,6,60},num=0,i=0;
+    num = arr[i];
+    for (int i=0;i<5;i++)
+    {
+        
+        if (num > arr[i])
+            num = arr[i];
+        
+            
+        
+    }
+    printf("largest number is %d ",num);
+
+    return 0;
+}
+#Q7. WAP to swaps 2 integers A and B.
+#include <stdio.h>
+int main()
+{
+    int a,b,t;
+    printf("Input the value for a");scanf("%d",&a);
+    printf("Input the value for b");scanf("%d",&b);
+    t = a;
+    a = b;
+    b = t;
+    printf("a %d b %d",a,b);
+}
+
+#Q8. WAP which checks that a given year is leap year or not (hint: After Every four year)
+#include <stdio.h>
+int main() {
+   int year;
+   printf("Enter a year: ");
+   scanf("%d", &year);
+
+   if (year % 400 == 0 || year % 4 == 0) {
+      printf("%d is a leap year.", year);
+      return;
+   }
+
+
+
+
+      printf("%d is not a leap year.", year);
+   
+
+
+
+   return 0;
+}
+
+#Q9. WAP which reverse a string S.
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char str[100],rstr[100];
+    char vovel[5]={'a','e','i','o','u'};
+    int c = 0;;
+    printf("enter str");scanf("%s",&str);
+ 
+
+        for (int j=strlen(str)-1;j>-1;j--)
+        {
+            rstr[c] = str[j];
+            c++;
+            
+        }
+
+        
+        
+        
+  
+    
+
+    printf("rever string is %s",rstr);
+}
+#Q10. WAP to find maximum Number among three integers ( A,B and C)
+#include <stdio.h>
+int main()
+{
+    int a,b,c,t;
+    printf("Input the value for a");scanf("%d",&a);
+    printf("Input the value for b");scanf("%d",&b);
+    printf("Input the value for b");scanf("%d",&c);
+    if (a>b && a>c)
+        t = a;
+    else if (b>a && b>c)
+        t = b;
+    else if (b>a && b>c)
+        t = c;
+    printf("lagerst is %d",c);
+}
+
+
+
+#mcq
+
+5 MCQ’s questions: 
+
+Q1. What is the time complexity of an algorithm that loops through an array of size N once?
+A) O(N)
+B) O(log N)
+C) O(N^2)
+D) O(1)
+
+Q2. Which data structure follows the Last In, First Out (LIFO) principle?
+A) Queue
+B) Stack
+C) Linked List
+D) Heap
+ans . B. Stack
+
+Q3. What is the purpose of the "break" statement in a loop?
+A) Skip to the next iteration
+B) Exit the loop
+C) Restart the loop
+D) Pause the loop temporarily
+
+ans . B. Exit the loop
+Q4. In a binary search, what is the key characteristic of the array being searched?
+A) Must be sorted
+B) Must be reversed
+C) Must be shuffled
+D) Must be unsorted
+ans. A . Must be sorted
+
+Q5. What is the time complexity of an algorithm?
+A) The amount of memory it uses
+B) The number of operations it performs
+C) The execution speed on a specific machine
+D) The input size the algorithm can handle
+
+ans. B.
+
