@@ -1,1 +1,246 @@
 ADD Competitive Programming answers here.
+//Ques 1
+#include <iostream>
+using namespace std;
+int main(){
+int A,B;
+cout<<"enter your number"<<endl;
+cin>>A;
+cout<<"enter your number"<<endl;
+cin>>B;
+cout<<"your result is"<< A*B;
+return 0;
+}
+//Ques 2
+ 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int a;
+  cout << "Enter the number: "; cin >> a;
+  /* logic */
+
+  if (a % 2 == 0) {
+    cout << "The given number is EVEN" << endl;
+  } else {
+    cout << "The given number is ODD" << endl;
+  }
+
+  return 0;
+}
+
+// Ques 3
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    long factorial = 1.0;
+
+    cout << "Enter a positive integer: ";
+    cin >> n;
+
+    if (n < 0)
+        cout << "Error! Factorial of a negative number doesn't exist.";
+    else {
+        for(int i = 1; i <= n; ++i) {
+            factorial *= i;
+        }
+        cout << "Factorial of " << n << " = " << factorial;    
+    }
+
+    return 0;
+}
+
+// Ques 4
+#include <iostream> 
+  
+using namespace std; 
+  
+int vowelCount(char *sptr) 
+{ 
+     
+    int count = 0; 
+  
+     
+    while ((*sptr) != '\0') { 
+  
+        
+        if (*sptr == 'a' || *sptr == 'e' || *sptr == 'i'
+            || *sptr == 'o' || *sptr == 'u') { 
+  
+             
+            count++; 
+        } 
+  
+         
+        sptr++; 
+    } 
+  
+    return count; 
+} 
+  
+ 
+int main() 
+{ 
+    
+    char str[] = "vasuagrawal"; 
+  
+    
+    cout << "Vowels in above string: " << vowelCount(str); 
+  
+    return 0; 
+} 
+//Ques 5
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  int i, n;
+  float arr[100];
+
+  cout << "Enter total number of elements(1 to 100): ";
+  cin >> n;
+  cout << endl;
+
+  
+  for(i = 0; i < n; ++i) {
+    cout << "Enter Number " << i + 1 << " : ";
+    cin >> arr[i];
+  }
+  for(i = 1;i < n; ++i) {
+
+    if(arr[0] < arr[i])
+      arr[0] = arr[i];
+  }
+
+  cout << endl << "Largest element = " << arr[0];
+
+  return 0;
+}
+
+// ques 6
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[100], tot, i, s;
+    cout<<"Enter the Size for Array: ";
+    cin>>tot;
+    cout<<"Enter "<<tot<<" Array Elements: ";
+    for(i=0; i<tot; i++)
+        cin>>arr[i];
+    s = arr[0];
+    for(i=1; i<tot; i++)
+    {
+        if(s>arr[i])
+            s = arr[i];
+    }
+    cout<<"\nSmallest Number = "<<s;
+    cout<<endl;
+    return 0;
+}
+
+// ques 7
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a = 5, b = 10, temp;
+
+    cout << "Before swapping." << endl;
+    cout << "a = " << a << ", b = " << b << endl;
+
+    temp = a;
+    a = b;
+    b = temp;
+
+    cout << "\nAfter swapping." << endl;
+    cout << "a = " << a << ", b = " << b << endl;
+
+    return 0;
+}
+// ques 8
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  int year;
+
+  cout << "Enter a year: ";
+  cin >> year;
+
+  
+  if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+    cout << year << " is a leap year.";
+  }
+  else {
+    cout << year << " is not a leap year.";
+  }
+
+  return 0;
+}
+// ques 9
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main()
+{
+    char str[50], temp;
+    int i = 0, j;
+    cout << "Enter a string : ";
+    cin.getline(str, 50);
+    j = strlen(str) - 1;
+    while (i < j)
+    {
+        temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
+        i++;
+        j--;
+    }
+    cout << "\nReverse string : " << str;
+    return 0;
+}
+// ques 10
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    double n1, n2, n3;
+
+    cout << "Enter three numbers: ";
+    cin >> n1 >> n2 >> n3;
+
+    // check if n1 is the largest number
+    if(n1 >= n2 && n1 >= n3)
+        cout << "Largest number: " << n1;
+
+    // check if n2 is the largest number
+    else if(n2 >= n1 && n2 >= n3)
+        cout << "Largest number: " << n2;
+    
+    // if neither n1 nor n2 are the largest, n3 is the largest
+    else 
+        cout << "Largest number: " << n3;
+  
+    return 0;
+}
+
+
+
+/*
+1) A) O(N)
+2) B) stack
+3) B) Exit the loop
+4) A) Must be sorted
+5) B) The number of operations it performs
+
+*?*/
