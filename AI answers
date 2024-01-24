@@ -1,1 +1,33 @@
-ADD Artificial Intelligence answers here.
+#ADD Artificial Intelligence answers here.
+#p1
+num = 29
+
+flag = False
+
+if num == 1:
+    print(num, "is not a prime number")
+elif num > 1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            flag = True
+            break
+
+    if flag:
+        print(num, "is not a prime number")
+    else:
+        print(num, "is a prime number")
+
+#p2
+def reverse(s):
+	str = ""
+	for i in s:
+		str = i + str
+	return str
+
+s = "hello world"
+
+print("original string is : ", end="")
+print(s)
+
+print("The reversed stringis : ", end="")
+print(reverse(s))
