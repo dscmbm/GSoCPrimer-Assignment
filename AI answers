@@ -1,1 +1,71 @@
 ADD Artificial Intelligence answers here.
+ANSWERS OF PYTHON:
+# 1 
+def is_prime(num):
+    """Check if the input number is prime."""
+    if num <= 1:
+        return False
+    elif num == 2:
+        return True
+    else:
+        for i in range(2, int(num ** 0.5) + 1
+                       ):
+            if num % i == 0:
+                return False
+            return True
+        
+#2
+        
+        def reverse_string(input_string):
+            return input_string[::-1]
+        
+#3
+        import pandas as pd
+data = {'Name': ['Alice', 'Bob'],
+ 'Age': [25, 30]}
+df = pd.DataFrame(data)
+print(df)
+        
+#4 
+import numpy as np
+matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+print(matrix)
+
+#5
+dictionary = {'zebra': 1, 'apple': 2, 'banana': 3, 'mango': 4}
+print(alphabetical_keys(dictionary))      
+
+def alphabetical_keys(dictionary):
+    keys = list(dictionary.keys())
+    keys.sort()
+    return keys
+
+#6 
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print(factorial(5)) 
+  
+#7 
+arr = np.array([1, 2, 3, 4, 5])
+mean = np.mean(arr)
+std_dev = np.std(arr)
+print("Mean is :", mean)
+print("Standard Deviation is :", std_dev)
+
+#8 
+import pandas as pd
+df = pd.DataFrame(df_data, columns=['A', 'B'])
+sum_of_A = df.loc[df['B'] > 10, 'A'].sum()
+print(sum_of_A)
+
+
+
+
+        
+        
+
