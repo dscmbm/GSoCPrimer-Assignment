@@ -1,1 +1,59 @@
 ADD Artificial Intelligence answers here.
+Q.1
+
+a=int(input("enter the number"))
+count=0
+if a==1:
+    print("number is not prime")
+if a>1:
+ for i in range(1,a):
+    if a%i==0:
+        count=count+1
+
+ if(count>1):
+    print("the number is not prime")
+ else:
+    print("number is  prime")
+
+
+Q.3
+import pandas as pd
+
+data = {'Name': ['Person1', 'Person2'],
+        'Age': [25, 30]}
+
+df = pd.DataFrame(data)
+
+Q.4
+import numpy as np
+matrix = np.arange(1, 10).reshape(3,3)
+
+
+Q.6
+def fact(n):
+    if n==0:
+        return 1
+    return n*fact(n-1)
+a=int(input("enter a number"))
+
+s=fact(a)
+print(s)
+
+
+
+
+
+11.
+b) To handle errors and exceptions
+
+12.
+a) df.head(3)
+
+13.
+c) Accuracy
+
+14.
+a) result will be a list with two elements: ["Hello", "World!"].
+
+15.
+b) The function filters out elements that are not divisible by 3.
