@@ -1,1 +1,39 @@
 ADD Artificial Intelligence answers here.
+
+ANSWER 2
+def rev(str):
+    return str[::-1]
+print("Reversed string is",rev(input("Enter a string:")))
+
+
+
+ANSWEER 4
+import numpy as np
+mat = np.arange(1, 10).reshape(3, 3)
+print(mat)
+
+
+
+ANSWER 6
+def fact(n):
+    if n==1:
+        return 1
+    else:
+        return n*fact(n-1)
+x=int(input("Enter a positive number: "))
+print("Factorial of",x,"is",fact(x))
+
+
+
+ANSWER 11
+b) To handle errors and exceptions
+
+ANSWER 12
+a) df.head(3)
+
+ANSWER 14
+a) result will be a list with two elements: ["Hello", "World!"].
+
+
+ANSWER 15
+c) The function returns a new list.
