@@ -1,0 +1,16 @@
+Ans (i)
+option (A) O(N)
+
+Ans (ii)
+option (B) Stack
+
+
+Ans (iii)
+option (B) Exit the loop
+
+Ans (iv)
+option (A) Must be sorted
+
+Ans (v)
+option (B) The number of operations it performs
+

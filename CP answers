@@ -1,1 +1,277 @@
 ADD Competitive Programming answers here.
+
+// Answer no 1
+import java.util.*;
+// Q1. WAP  which multiplies two integers  A and B . 
+
+public class First{
+    public static int multiply(int a , int b){
+        return (a * b);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first integer:");
+        int a = sc.nextInt();
+        System.out.println("Enter the second integer:");
+        int b = sc.nextInt();
+        // calling method multiply() to get product of A & B
+        System.out.println("The product is : " + multiply(a,b));
+        
+    }
+}
+
+// answer 2
+
+import java.util.*;
+// Q2. WAP which finds whether number is EVEN or ODD. 
+
+public class Second{
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the  integer:");
+        int a = sc.nextInt();
+        if(a % 2 == 0) System.out.println(a + "is a even no.");
+        else System.out.println(a + " is a odd no.");
+
+
+        
+    }
+}
+
+// answer third
+import java.util.*;
+// . WAP which find factorial of a number N.
+
+
+public class Third {
+    public static long factorialCalculation(long n){
+        if(n == 0 || n == 1) return 1;
+        return n * factorialCalculation(n-1);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        long n = sc.nextInt();
+        
+        long result = factorialCalculation(n) ;
+        System.out.println("factorial of " + n + " is " + result);
+       
+        
+    }
+    
+}
+
+
+// fourth answer
+import java.util.*;
+
+// WAP which counts the number of vowels in a string.
+
+public class Fourth {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a String: ");
+        String str = sc.nextLine();
+        int count = 0; // variable to store the count of vowels
+        for (int i=0; i<str.length(); i++) {
+            char ch = Character.toLowerCase(str.charAt(i)); // converting each
+            // character to lowercase
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                count++; // incrementing the count whenever a vowel is found
+            }
+            
+
+        }
+
+        System.out.println("no of vowel in " + str + " is " + count);
+    }
+    
+}
+
+
+// Fifth answer
+// WAP which finds maximum number in an array. 
+import java.util.*;
+public class Fifth {
+    public static void main(String[] args) {
+        int n, max;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the size of the array:");
+        n = sc.nextInt();
+        int arr[] = new int[n];
+
+        System.out.println("Enter elements of the array:");
+        for (int i=0; i<n; i++)  arr[i] = sc.nextInt();
+
+
+        max = arr[0];  
+
+        for(int i = 0; i < n; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        } 
+
+        System.out.println("max of an array is : " + max);
+        
+
+        
+    }
+    
+}
+
+
+// sixth answer
+
+import java.util.*;
+// minimum of an array
+
+public  class Sixth{
+    public static void main(String[] args) {
+        int n, min;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the size of the array:");
+        n = sc.nextInt();
+        int arr[] = new int[n];
+
+        System.out.println("Enter elements of the array:");
+        for (int i=0; i<n; i++)  arr[i] = sc.nextInt();
+
+
+        min = arr[0];  
+
+        for(int i = 0; i < n; i++){
+            if(arr[i] < min){
+                min = arr[i];
+            }
+        } 
+
+        System.out.println("minimum of an array is : " + min);
+    }
+}
+
+
+// seventh answer
+// WAP to swaps 2 integers A and B. 
+import java.util.*;
+
+public class Seventh {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value of A:");
+        int a = sc.nextInt();
+        System.out.println("Enter the value of B:");
+        int b = sc.nextInt();
+        if (a > b) System.out.println(a + " is greater then " + b);
+        else System.out.println(a + " is less then " +b);
+    }
+    
+}
+
+
+// eighth answer
+import java.util.*;
+// WAP which checks that a given year is leap year or not (hint: After Every four year)
+
+public class Eight {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter any year : ");
+        
+        int year = sc.nextInt();
+        if ((year % 4 == 0 && year % 100 != 0 || year % 400 == 0)) {
+            System.out.println(year + " is a Leap Year");
+        }else {
+            System.out.println(year + " is Not a Leap Year");
+        }
+        
+
+    
+    }
+    
+}
+
+
+// nineth answer
+import java.util.*;
+// WAP which reverse a string S.
+public class Ningth {
+    public static void swap(char c[] , int i , int j){
+        char temp =c[i];
+        c[i] = c[j];
+        c[j] =temp;
+
+    }
+    public static void main(String[] args) {
+        System.out.println("enter a string : ");
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        char c[] = s.toCharArray();
+        int n = c.length;
+        // Reverse the array
+        for (int i=0, j=n-1; i<j; i++, j--) {
+            // Swap elements at i and j
+            swap(c , i , j);
+        }
+    // / Print the reversed string
+        System.out.print("\nReversed string is:");
+        System.out.println(c);
+
+
+    }
+
+        
+}
+// tenth answer
+
+import java.util.*;
+// WAP to find maximum Number among three integers ( A,B and C) 
+public class Tenth {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first number : ");
+        int a = sc.nextInt();
+        System.out.println("Enter the second number :");
+        int b = sc.nextInt();
+        System.out.print("Enter the third number : ");
+        int c = sc.nextInt();
+        if(a > b){
+            if(a > c) System.out.println("The largest number is " + a);
+            
+            else System.out.println("The largest number is " + c);
+            
+        }else{
+            if(b > c) System.out.println("The largest number is " + b);    
+            else System.out.println("The largest number is " + c);
+        }
+            
+        
+
+        
+    }
+}
+
+mcq answer
+
+Ans (i)
+option (A) O(N)
+
+Ans (ii)
+option (B) Stack
+
+
+Ans (iii)
+option (B) Exit the loop
+
+Ans (iv)
+option (A) Must be sorted
+
+Ans (v)
+option (B) The number of operations it performs
+
+
+
+
+
+
