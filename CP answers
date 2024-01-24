@@ -1,1 +1,15 @@
 ADD Competitive Programming answers here.
+question 1:
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a,b;
+   cout<<"enter two no."<<endl;
+   cin>>a>>b;
+   cout<<a*b<<endl;
+
+    return 0;
+}
