@@ -1,1 +1,99 @@
 ADD Web Development Answers here.
+HTML Solutions:
+Sol 1. <input type="checkbox" id="box" name="box">
+<label for="box">Checkbox Label</label>
+
+Sol 2. 
+<pre>
+Text in a pre element
+    is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+</pre>
+
+Sol 3.
+<a href="https://random.com" target="_blank">Visit Website</a>
+
+Sol 4.
+<form action="/submit" method="post">
+  <label for="textInput">Enter Text:</label>
+  <input type="text" id="textInput" name="textInput">
+  <input type="submit" value="Submit">
+</form>
+
+Sol 5.
+<ul>
+  <li>coffee</li>
+  <li>tea</li>
+  <li>milk</li>
+</ul>
+
+
+CSS Solutions:
+Sol 1.
+p:first-of-type::first-letter {
+  font-size: larger;
+  color: red;
+}
+
+p:last-of-type::first-letter {
+  font-size: larger;
+  color: blue;
+}
+
+Sol 2.
+p {
+  background-color: black !important;
+}
+
+Sol 3.
+.hidden-element {
+  display: none;
+}
+
+.hidden-element {
+  visibility: hidden;
+}
+
+.hidden-element {
+  opacity: 0;
+}
+
+Sol 4.
+310 px
+
+Sol 5.
+img {
+  background-repeat: no-repeat;
+}
+
+JavaScript Solutions:
+Sol 1.
+var element = document.getElementById("Id");
+
+Sol 2. 
+var button = document.getElementById("Id");
+
+button.addEventListener("click", function() {
+  //Write Code
+});
+
+Sol 3. 
+setTimeout(function() {
+  console.log("Hello");
+}, 2000);
+
+Sol 4.
+2
+4
+3
+1
+
+
+Sol 5.
+const myObject = { key1: 'value1', key2: 'value2', key3: 'value3' };
+
+for (var key in myObject) {
+  console.log(key); 
+}
