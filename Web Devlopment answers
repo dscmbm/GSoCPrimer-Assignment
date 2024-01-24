@@ -26,3 +26,23 @@ ANSWERS OF HTML:
         <li>tea</li>
         <li>milk</li>
     </ul>
+ANSWERS OF JAVASCRIPT:
+// 1.
+        let x = document.getElementById("demo");
+// 2. 
+        let btn = document.querySelector('button');
+        btn.addEventListener('click', function(){
+            alert("You clicked me!");
+            });
+// 3.
+            setTimeout(function() {console.log("Hello")}, 2000);
+//4.
+            2
+            4
+            3
+            1
+
+// 5.
+for (let i in myObject) {
+    console.log(Key: ${i} Value: ${myObject[i]});
+    }
