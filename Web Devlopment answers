@@ -1,1 +1,62 @@
-ADD Web Development Answers here.
+Question1: Create a checkbox input feild in HTML
+Code: 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            anskey1
+        </title>
+    </head>
+    <body>
+        <h1>What is your fav food.</h1>
+        <label for="mycheckbox"> apple</label>
+        <input type="checkbox" id="my checkbox" 
+        name="mycheckbox">
+        <label for="mycheckbox">Banana</label>
+        <input type="checkbox" id="mycheckbox"
+        name="mycheckbox">
+    </body>
+</html>
+
+Question3:How to create a hyperlink that opens in a new tab?
+Code:
+  Text in a pre element
+  	is displayed in a fixed-width
+  font, and it preserves
+  both      spaces and
+  line breaks
+Answer:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            anskey2
+        </title>
+    </head>
+    <body>
+         <a href="#" target="_blank">Click here to open a new tab</a>
+    </body>
+</html>
+
+Question4.Implement a basic form with a text input and a submit button.
+
+Answer:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            anskey4
+        </title>
+    </head>
+    <body>
+        <h2>Basic form  submission</h2>
+        <form>
+            <p> name
+                <input type="name" id="mycheckbox"
+                name="name">
+            </p>
+            <input type="submit">
+        </form>
+    </body>
+</html>
+
