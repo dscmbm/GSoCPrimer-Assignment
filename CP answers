@@ -33,3 +33,116 @@ int main()
     return 0;
 
 }
+
+ans 3-
+
+#include<iostream>
+using namespace std;
+
+int factorial(int a)
+{
+    if(a<=1)
+        return 1;
+    else
+        return a*factorial(a-1);
+}
+ 
+int main() 
+{   
+    int n;
+    cout<<"Enter the number :"<<endl;
+    cin>>n;
+    cout<< "The factorial is :"<<factorial(n) <<endl;
+    return 0;
+}
+
+ans 4-
+
+
+#include <iostream> 
+
+using namespace std; 
+
+int vowelCount(char *sptr) 
+{ 
+	
+	int count = 0; 
+
+	while ((*sptr) != '\0') { 
+
+
+		if (*sptr == 'a' || *sptr == 'e' || *sptr == 'i'
+			|| *sptr == 'o' || *sptr == 'u') { 
+
+
+			count++; 
+		}
+
+		sptr++; 
+	} 
+
+	return count; 
+} 
+ 
+int main() 
+{ 
+ 
+	char str[] = "hey i am umar ";
+	cout << "Vowels in above string: " << vowelCount(str); 
+
+	return 0; 
+} 
+
+ans -7
+
+#include<iostream>
+using namespace std;
+
+int swap(int *x,int *y)
+{
+    int c=*x;
+        *x=*y;
+        *y=c;
+}
+
+int main(){
+    int a=5,b=6;
+    swap(&a,&b);
+
+    cout<<"The swap number is :\n"<< a<<endl <<b;
+    return 0;
+}
+ 
+ans 10-
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,greter;
+
+    cout<<"enter three number : "<<endl;
+    cin>>a>>b>>c;
+
+    if(a>=b && a>=c)
+        cout<<"The greter number is :"<<a;
+        
+    else if(b>=a && b>=c)
+        cout<<"The greter number is :"<<b;
+
+    
+    else
+        cout<<"The greter number is :"<<c;
+
+    return 0;  
+
+
+
+}
+
+MCQ 
+ans 1-a
+ans 2-b
+ans 3-b
+ans 4-a
+ans 5-b
