@@ -1,1 +1,28 @@
 ADD Web Development Answers here.
+ANSWERS OF HTML:
+<!-- Q1 -->
+    <label for="checkbox">checkbox</label>
+    <input type="checkbox" id="checkbox" name="checkbox">
+    <!-- Q2 -->
+    <p>
+<pre>Text in a pre element<br>
+    is displayed in a fixed-width<br>
+    font, and it preserves<br>
+    both      spaces and<br>
+    line breaks</pre><br>
+    </p>
+    <!-- Q3 -->
+    <a target="_blank" href="#">New Tab Link</a>.
+
+    <!-- Q4 -->
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Q5 -->
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
