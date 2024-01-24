@@ -1,1 +1,135 @@
 ADD Competitive Programming answers here.
+//ADD Competitive Programming answers here.
+#include <iostream>
+#include <string>
+#include<algorithm>
+using namespace std;
+
+//Q1
+int multiply(int a, int b){
+    return a*b;
+}
+
+// Q2
+void checkEvenOdd(int a){
+    if(a%2 == 0){
+        cout<<"The number"<<a<<"is an even number";
+
+    }
+    else{
+         cout<<"The number"<<a<<"is a odd number";
+    }
+
+    }
+// Q3
+    int factorial(int n){
+        if(n==1 || n==0){
+            return 1;
+        }
+           else{
+            return n*factorial(n-1);
+           }
+        
+    }
+    // Q4
+    int countVowel( string str, int n){
+        int count =0;
+        for(int i=0;i<n-1;i++){
+            if( str[i]=='a' || str[i]=='e' ||str[i]=='i' ||str[i]=='o' ||str[i]=='u'  ){
+                count ++;
+
+            }
+        }
+        return count;
+        
+}
+// Q5
+
+    int maxNumber(int arr[], int n){
+         sort(arr, arr+n);
+         return arr[n-1];
+
+    }
+// Q6
+        int minNumber(int arr[], int n){
+         sort(arr, arr+n);
+         return arr[0];
+
+    }
+// Q7
+    void swap(int &a, int &b){
+        int temp=a;
+        a=b;
+        b=temp;
+        cout<<"a after swap is"<<a;
+        cout<<"b after swap is"<<b;
+    }
+// Q8
+    void leapYear(int year){
+         if (year % 400 == 0) {
+    cout << year << " is a leap year.";
+  }
+  
+  else if (year % 100 == 0) {
+    cout << year << " is not a leap year.";
+  }
+  
+  else if (year % 4 == 0) {
+    cout << year << " is a leap year.";
+  }
+  
+  else {
+    cout << year << " is not a leap year.";
+  }
+    }
+// Q9
+
+   
+    
+
+
+int main(){
+    //ans 1 
+    int a,b;
+    cin>>a>>b;
+   cout<< multiply(a,b);
+    
+    // ans 2
+    int b;
+    cin >>b;
+    checkEvenOdd(b);
+   
+    // ans 3
+    int n;
+    cin>>n;
+   cout<< factorial(n);
+   
+    // ans 4
+    string str="gdsc";
+    cout<<countVowel(str,4);
+
+    // ans 5
+    int arr[]= {1,7,4,9,10};
+    cout<<maxNumber(arr,5);
+
+    // ans6
+    cout<<minNumber(arr,5);
+    
+    // ans 7
+    swap(a,b);
+    
+    // ans8
+    int year;
+    cin>>year;
+    leapYear(year);
+
+/* MCQ ans
+ans 1. A
+ans 2.A
+ans 3. B
+ans4 .A
+ans5 . C
+*/
+    return 0;
+}
+
