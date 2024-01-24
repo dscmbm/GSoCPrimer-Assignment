@@ -1,1 +1,98 @@
-ADD Artificial Intelligence answers here.
+Question 1
+Answer-
+def is_prime(n):
+    if n <= 1:
+        return False
+    elif n <= 3:
+        return True
+    elif n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+Question 2 
+Answer-
+def reverse_string(input_string):
+return input_string[::-1]
+
+Question 3
+Answer-
+import pandas as pd
+
+data = {
+    'Name': ['Ajeet Jain', 'Lalit'],
+    'Age': [19, 20]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+Question 4
+Answer-
+import numpy as np
+matrix = np.array([[1, 2, 3],
+                   [4, 5, 6],
+                   [7, 8, 9]])
+
+print(matrix)
+
+Question 5
+Answer- 
+def sort_keys(input_dict):
+    return sorted(input_dict.keys())
+
+Question 6
+Answer-
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+
+Question 7
+Answer-
+import numpy as np
+
+mean = np.mean(arr)
+std_dev = np.std(arr)
+
+print("Mean:", mean)
+print("Standard Deviation:", std_dev)
+
+Question 8
+Answer-
+import pandas as pd
+
+sum_A = df.loc[df['B'] > 10, 'A'].sum()
+
+print("Sum of column 'A' where column 'B' is greater than 10:", sum_A)
+Question 9
+Answer-
+from sklearn.metrics import accuracy_score
+
+predictions = model.predict(X_test)
+accuracy = accuracy_score(y_test, predictions)
+
+print("Accuracy:", accuracy)
+
+Question 10
+Answer-
+def remove_duplicates(input_list):
+    return list(set(input_list))
+
+Question 11
+Answer- B
+Question 12
+Answer - A
+Question 13
+Answer - C
+Question 14 
+Answer - A
+Question 15
+Answer -  B and C
+
