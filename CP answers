@@ -1,1 +1,187 @@
-ADD Competitive Programming answers here.
+//Answer 1
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int a,b;
+    cout<<"Enter two space separated integers : ";
+    cin>>a>>b;
+    a = 5;
+    b = 7;
+    cout<<a * b<<endl;
+    return 0;
+}
+
+//Answer 2
+
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    int a;
+    cout<<"Enter a number : ";
+    cin>>a;
+    if(a % 2 == 0) {
+        cout<<"Even"<<endl;
+    } else {
+        cout<<"Odd"<<endl;
+    }
+    return 0;
+}
+
+//Answer 3
+
+#include<bits/stdc++.h>
+using namespace std;
+int fac(int a) {
+    if(a == 0 || a == 1) {
+        return 0;
+    }
+    return (a * fac(a - 1));
+}
+int main() {
+    int a;
+    cout<<"Enter a number to claculate factorial : ";
+    cin>>a;
+    cout<<"Factorial of "<<a<<" is : "<<fac(a)<<endl;
+    return 0;
+}
+
+//Answer 4
+
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    string S;
+    int count = 0;
+    cout<<"Enter String : ";
+    cin>>S;
+    for(int i = 0; i < S.size(); i++) {
+        if(S[i] == 'a' || S[i] == 'e' || S[i] == 'i' || S[i] == 'o' || S[i] == 'u' || S[i] == 'A' || S[i] == 'E' || S[i] == 'I' || S[i] == 'O' || S[i] == 'U') {
+            count++;
+        }
+    }
+    cout<<"Number of vowels = "<<count<<endl;
+    return 0;
+}
+
+//Answwe 5
+
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    int N;
+    cout<<"Enter Size of array : ";
+    cin>>N;
+    int A[N];
+    cout<<"Enter all numbers of array separated by spaces : ";
+    for(int i = 0; i < N; i++) {
+        cin>>A[i];
+    }
+    sort(A, A + N);
+    cout<<"Maximum number in the input array is : "<<A[N - 1]<<endl;
+    return 0;
+}
+
+//Answer 6
+
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    int N;
+    cout<<"Enter Size of array : ";
+    cin>>N;
+    int A[N];
+    cout<<"Enter all numbers of array separated by spaces : ";
+    for(int i = 0; i < N; i++) {
+        cin>>A[i];
+    }
+    sort(A, A + N);
+    cout<<"Minimum number in the input array is : "<<A[0]<<endl;
+    return 0;
+}
+
+//Answer 7
+
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    int a, b;
+    cout<<"Enter two space separated integers : ";
+    cin>>a>>b;
+    cout<<"Before swap : a = "<<a<<" and b = "<<b<<endl;
+    swap(a, b);
+    cout<<"After swap : a = "<<a<<" and b = "<<b<<endl;
+    return 0;
+}
+
+//Answer 8
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+  int year;
+  cout << "Enter a year: ";
+  cin >> year;
+
+  if (year % 400 == 0) {
+    cout <<"Leap Year"<<endl;
+  } else if (year % 100 == 0) {
+    cout << year << "Not A Leap Year"<<endl;
+  } else if (year % 4 == 0) {
+    cout << year << "Leap Year"<<endl;
+  } else {
+    cout << year << "Not A Leap Year"<<endl;
+  }
+
+  return 0;
+}
+
+//Answer 9
+
+#include <bits/stdc++.h>
+using namespace std;
+void reverseStr(string& str)
+{
+	int n = str.length();
+	for (int i = 0; i < n / 2; i++)
+		swap(str[i], str[n - i - 1]);
+}
+int main()
+{
+	string S;
+    cout<<"Enter String : "<<endl;
+    cin>>S;
+	reverseStr(S);
+	cout << S;
+	return 0;
+}
+
+//Answer 10
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int A, B, C;
+	printf("Enter three space separated integers : ");
+	cin>>A>>B>>C;
+	if (A >= B && A >= C) {
+		cout<<"Largest = "<<A<<endl;
+    } else if (B >= A && B >= C) {
+		cout<<"Largest = "<<B<<endl;
+    } else {
+		cout<<"Largest = "<<C<<endl;
+    }
+	return 0;
+}
+
+//MCQ Answers
+
+1 - (A)
+2 - (B)
+3 - (B)
+4 - (A)
+5 - (C)
