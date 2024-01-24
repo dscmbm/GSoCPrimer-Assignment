@@ -1,1 +1,35 @@
-ADD Competitive Programming answers here.
+ans 1-
+#include<iostream>
+using namespace std;
+
+
+
+int main()
+{
+    int x=5,y=5;
+   int mul= x*y;
+    cout<<"the result is "<<mul<<endl;
+    return 0;
+}
+ans 2-
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+ int n;
+ cout<<"Enter the number :";
+ cin>>n;
+
+ if(n%2==0){
+    cout<<"Given input is even number";
+
+
+ }
+ else
+    cout<<"Given input is not even number";
+
+    return 0;
+
+}
