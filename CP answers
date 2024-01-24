@@ -1,1 +1,218 @@
-ADD Competitive Programming answers here.
+// ADD Competitive Programming answers here.
+// Question 1 :- WAP which multiplies two integers A and B.
+#include<iostream>
+using namespace std;
+int main()
+{ 
+    int a, b;
+    cout<<"Enter the numbers :- \n";
+    cin>>a,b;
+    cout<<"The Multiplication of two numbers A and B is :- "<<a*b; 
+return 0; 
+}
+
+// Question 2 :- WAP which finds whether number is EVEN or ODD.
+#include<iostream>
+using namespace std;
+int main()
+{ 
+    int A;
+    cout<<"Enter the number :- \n";
+    cin>>A;
+    if(A%2==0) cout<<"Even\n";
+    else cout<<"Odd\n";
+return 0; 
+}
+
+// Question 3 :- WAP which find factorial of a number N.
+#include<iostream>
+using namespace std;
+long int factorial(int A){
+    if(A==0){
+        return 1;
+    }else{
+        return A*factorial(A-1);
+    }
+}
+int main()
+{ 
+     int A;
+     cout<<"Enter a number:- \n";
+     cin>>A;
+     if(A<0) cout<<"Cannot find factroial less than 0\n";
+     cout<<"Factorial of number "<<A<<" is :- "<<factorial(A)<<endl;
+return 0; 
+}
+
+// Question 4 :- WAP which counts the number of vowels in a string.
+#include <iostream>
+#include <string>
+using namespace std;
+int countVowels(string str) {
+    int count = 0;
+    for (int i = 0; i < str.length(); i++) {
+        char c = tolower(str[i]);
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+            count++;
+        }
+    }
+    return count;
+}
+int main() {
+    string str;
+    cout << "Enter a string: ";
+    getline(cin, str);
+    cout << "Number of vowels: " << countVowels(str) << endl;
+    return 0;
+}
+
+// Question 5 :- WAP which finds maximum number in an array.
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter the size of the array: ";
+    cin >> n;
+    int arr[n];
+    cout << "Enter the elements of the array: ";
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    int max_num = *max_element(arr, arr+n);
+    cout << "The maximum number in the array is: " << max_num << endl;
+    return 0;
+}
+
+// Question 6 :- WAP which finds minimum number in an array.
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter the size of the array: ";
+    cin >> n;
+    int arr[n];
+    cout << "Enter the elements of the array: ";
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    int max_num = *min_element(arr, arr+n);
+    cout << "The maximum number in the array is: " << max_num << endl;
+    return 0;
+}
+
+// Question 7 :- WAP to swaps 2 integers A and B.
+#include <iostream>
+using namespace std;
+void swap(int &a, int &b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+int main() {
+    int A, B;
+    cout << "Enter two integers A and B: ";
+    cin >> A >> B;
+    cout << "Before swapping: A = " << A << ", B = " << B << endl;
+    swap(A, B);
+    cout << "After swapping: A = " << A << ", B = " << B << endl;
+    return 0;
+}
+
+// Question 8 :- WAP which checks that a given year is leap year or not (hint: After Every four year)
+#include <iostream>
+using namespace std;
+bool isLeapYear(int year) {
+    if (year % 4 != 0) {
+        return false;
+    } else if (year % 100 != 0) {
+        return true;
+    } else if (year % 400 != 0) {
+        return false;
+    } else {
+        return true;
+    }
+}
+int main() {
+    int year;
+    cout << "Enter a year: ";
+    cin >> year;
+    if (isLeapYear(year)) {
+        cout << year << " is a leap year." << endl;
+    } else {
+        cout << year << " is not a leap year." << endl;
+    }
+    return 0;
+}
+
+// Question 9 :- WAP which reverse a string S.
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main() {
+    string S;
+    cout << "Enter a string: ";
+    getline(cin, S);
+    reverse(S.begin(), S.end());
+    cout << "Reversed string: " << S << endl;
+    return 0;
+}
+
+// Question 10 :- WAP to find maximum Number among three integers ( A,B and C)
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main() {
+    int A, B, C;
+    cout << "Enter three integers A, B and C: ";
+    cin >> A >> B >> C;
+    int max_num = max({A, B, C});
+    cout << "The maximum number among A, B and C is: " << max_num << endl;
+    return 0;
+}
+
+/*
+5 MCQ’s questions: 
+
+Q1. What is the time complexity of an algorithm that loops through an array of size N once?
+A) O(N)
+B) O(log N)
+C) O(N^2)
+D) O(1)
+
+Answer :- A) O(N)
+
+Q2. Which data structure follows the Last In, First Out (LIFO) principle?
+A) Queue
+B) Stack
+C) Linked List
+D) Heap
+
+Answer :- B) Stack
+
+Q3. What is the purpose of the "break" statement in a loop?
+A) Skip to the next iteration
+B) Exit the loop
+C) Restart the loop
+D) Pause the loop temporarily
+
+Answer :- B) Exit the loop
+
+Q4. In a binary search, what is the key characteristic of the array being searched?
+A) Must be sorted
+B) Must be reversed
+C) Must be shuffled
+D) Must be unsorted
+
+Answer :- A) Must be sorted
+
+Q5. What is the time complexity of an algorithm?
+A) The amount of memory it uses
+B) The number of operations it performs
+C) The execution speed on a specific machine
+D) The input size the algorithm can handle
+
+Answer :- B) The number of operations it performs
+
+*/
