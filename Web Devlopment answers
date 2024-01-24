@@ -1,1 +1,23 @@
 ADD Web Development Answers here.
+Q.3-<a href="https://chat.openai.com/" target="_blank">tap here</a>
+Q.1- <p>which one is your favourite programming language?</p>
+<input type="checkbox" value="python" class ="coding">JAVASCRIPT</input>
+<input type="checkbox" value="CPP" class ="coding">CPP</input>
+<input type="checkbox" value="JAVASCRIPT" class ="coding">JAVASCRIPT</input>
+<input type="checkbox" value="HTML" class ="coding">HTML</input>
+Q.2- <pre>
+    This is our second day.
+    We are learning to use git and github.               we are absolutely loving it.
+</pre>
+Q.4- <form>
+    <label>Enter your name:
+        <input type="text"/></label>
+     
+    <button>SUBMIT</button>
+</form>
+Q.5- 
+<ul>
+    <li>coffee</li>
+    <li>tea</li>
+    <li>milk</li>
+</ul>
