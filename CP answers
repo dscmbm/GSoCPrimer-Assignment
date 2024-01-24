@@ -1,1 +1,200 @@
 ADD Competitive Programming answers here.
+//p1
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int A,B;
+    cin>>A>>B;
+    cout<<A*B;
+    return 0;
+}
+
+//p2
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    if(n%2)
+    {
+        cout<<"odd";
+    }
+    else
+    {
+        cout<<"even";
+    }
+}
+
+//p3
+#include <bits/stdc++.h>
+using namespace std;
+
+int factorial(int n) {
+  if(n > 1)
+    return n * factorial(n - 1);
+  else
+    return 1;
+}
+
+int main() {
+
+  int n;
+
+  cout << "Enter a positive value: ";
+  cin >> n;
+
+  cout << "Factorial of " << n << " = " << factorial(n);
+
+  return 0;
+}
+
+//p4
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int cnt=0;
+	string a="what is your name";
+	for(int i=0;i<a.length();i++)
+	{
+		if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u')
+		{
+			cnt++;
+		}
+	}
+	cout<<cnt;
+}
+
+//p5
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int arr[]={1,2,3,4,5};
+	int max=arr[0];
+	for(int i=0;i<5;i++)
+	{
+		if(arr[i]>max)
+		max=arr[i];
+	}
+	cout<<"MAXIMUM VALUE IS:"<<max;
+}
+
+//p6
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int arr[]={1,2,3,4,5};
+	int min=arr[0];
+	for(int i=0;i<5;i++)
+	{
+		if(arr[i]<min)
+		min=arr[i];
+	}
+	cout<<"MINIMUM VALUE IS:"<<min;
+}
+
+//p7
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int a,b,temp;
+	cin>>a>>b;
+	temp=a;
+	a=b;
+	b=temp;
+	cout<<"a="a<<"b="b;
+}
+
+//p8
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+  int year;
+  cin >> year;
+
+  if (year % 400 == 0) {
+    cout<<"leap year";
+  }
+  
+  else if (year % 100 == 0) {
+    cout<<"leap year";
+  }
+  
+  else if (year % 4 == 0) {
+    cout<<"leap year";
+  }
+  else {
+    cout<<"is not a leap year";
+  }
+
+  return 0;
+}
+
+//p9
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	string str = "hello world";
+	int n = str.length();
+
+	for (int i = 0; i < n / 2; i++)
+		swap(str[i], str[n - i - 1]);
+		
+	cout << str;
+	return 0;
+}
+
+//p10
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main()
+{
+	int a, b, c;
+	cout<<"Enter the three numbers" << endl;
+	cin>>a>>b>>c;
+
+	if (a >= b) {
+		
+		if (a >= c) {
+			cout<<"The Largest is: "
+				<< a << endl;
+		}
+		else {
+			
+			cout << "The Largest is : "
+				<< c << endl;
+		}
+	}
+	else {
+		
+		if (b >= c) {
+			
+			cout << "The Largest is : "
+				<< b << endl;
+		}
+		else {
+			
+			cout << "The Largest is : "
+				<< c << endl;
+		}
+	}
+	return 0;
+}
+
+
+//MCQ
+ans1 (a)
+ans2 (b)
+ans3 (c)
+ans4 (a)
+ans5 (b)
