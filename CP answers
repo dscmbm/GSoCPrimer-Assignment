@@ -1,1 +1,116 @@
 ADD Competitive Programming answers here.
+
+1. #include<iostream>
+using namespace std;
+int main(){
+	int x, y;
+	cout<<"enter the first number: ";
+	cin>>x;
+	cout<<"enter the second number: ";
+	cin>>y;
+	cout<<"multiplication of "<<x<<" * "<<y<<" is "<<x*y;
+	return 0;
+}
+
+2. #include<iostream>
+using namespace std;
+int main(){
+	int x;
+	cout<<"enter the number to check wheather the number is even or odd: ";
+	cin>>x;
+	if(x%2==0){
+		cout<<"the number you entered is even";
+	}
+	else
+	cout<<"the number you entered is odd";
+	return 0;
+}
+
+3. #include<iostream>
+using namespace std;
+long fact(int);
+int main(){
+	int n;
+	cout<<"enter the number upto which you want to find factorial: ";
+	cin>>n;
+	cout<<"factorial of "<<n<<" is "<<fact(n);
+	return 0;
+}
+long fact(int n){
+	if(n==1){
+		return 1;
+	}
+	else
+	return (n*fact(n-1));
+}
+
+
+7. #include<iostream>
+using namespace std;
+int main(){
+	int a,b,temp;
+	cout<<"enter the first number: ";
+	cin>>a;
+	cout<<"enter the second number: ";
+	cin>>b;
+	cout<<"numbers before swapping: "<<a<<" "<<b;
+	cout<<endl;
+	temp=a;
+	a=b;
+	b=temp;
+	cout<<"numbers after swapping: "<<a<<" "<<b;
+	return 0;
+}
+
+
+8. #include<iostream>
+using namespace std;
+int main(){
+	int y;
+	cout<<"enter the year: ";
+	cin>>y;
+	if(y%4==0){
+		cout<<"IT IS LEAP YEAR";
+	}
+	else{
+		cout<<"IT IS NOT LEAP YEAR";
+	}
+	
+	
+	return 0;
+}
+
+
+
+10. #include<iostream>
+using namespace std;
+int main(){
+	int a,b,c;
+	cout<<"enter the first number: ";
+	cin>>a;
+	cout<<"enter the second number: ";
+	cin>>b;
+	cout<<"enter the third number: ";
+	cin>>c;
+	if(a>b && a>c){
+		cout<<"the maximum number is: "<<a;
+	}
+	else if(b>a && b>c){
+		cout<<"the maximum number is: "<<b;
+	}
+	else{
+		cout<<"the maximum number is: "<<c;
+	}
+	
+	return 0;
+}
+
+
+MCQ ANSWERS:
+
+1. A
+2. B
+3. B
+4. D
+5. D
+
