@@ -1,1 +1,140 @@
-ADD Competitive Programming answers here.
+#include<iostream>
+using namespace std;
+
+// Question 1
+int multiply(int A , int B){
+    int product;
+    product = A * B;
+    return product;
+}
+// Question 2
+void even_odd(int num){
+    if (num % 2 == 0)
+        cout << num << " is even."<<endl;
+    else
+        cout << num << " is odd."<<endl;
+}
+// Question 3
+long long factorial(int N) {
+    if (N == 0)
+        return 1;
+    else
+        return N * factorial(N - 1);
+}
+//question 4
+int countVowels(string str) {
+    int count = 0;
+    for (int i = 0; i < str.length(); i++) {
+        char c = tolower(str[i]);
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+            count++;
+        }
+    }
+    return count;
+}
+//Question 5
+int findMax(int arr[],int size) {
+    int max = arr[0];
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    return max;
+     
+}
+//Question 6
+int findMin(int arr[], int n) {
+    int min = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+    }
+    return min;
+}
+//Question 7
+void swap(int& A, int& B) {
+    int temp = A;
+    A = B;
+    B = temp;
+}
+//Question 8
+
+bool isLeapYear(int year) {
+    if (year % 4 != 0)
+        return false;
+    else if (year % 100 != 0)
+        return true;
+    else if (year % 400 != 0)
+        return false;
+    else
+        return true;
+}
+//Question 9
+string reverseString(string S) {
+    int n = S.length();
+    for (int i = 0; i < n / 2; i++) {
+        swap(S[i], S[n - i - 1]);
+    }
+    return S;
+}
+
+//Question 10
+int findMax(int A, int B, int C) {
+    if (A > B && A > C)
+        return A;
+    else if (B > A && B > C)
+        return B;
+    else
+        return C;
+}
+
+// MCQ
+//Question 1 - A
+//Question 2 - B
+//Question 3 - B
+//Question 4 - A
+//Question 5 - B
+
+
+int main() {
+    int A, B, product;
+    int arr[] = {42,43,843,7323,2341};
+    cout << "Enter two integers: ";
+    cin >> A >> B;
+    product = multiply(A,B);
+    cout << "Product: " << product << endl;
+    even_odd(A);
+    cout << "Factorial of " << A << " is "<< factorial(A) << endl;
+    string str;
+    cout << "Enter a string: ";
+    cin>>str;
+    cout << "Number of vowels: " << countVowels(str) << endl;
+    int max = findMax(arr,5);
+    cout<<"maximum in array "<<max<<endl;
+    int min = findMin(arr,5);
+    cout<<"minimum in array "<<min<<endl;
+     cout << "Before swap: A = " << A << ", B = " << B << endl;
+    swap(A, B);
+    cout << "After swap: A = " << A << ", B = " << B << endl;
+    int year;
+
+    cout << "Enter a year: ";
+    cin >> year;
+
+    if (isLeapYear(year))
+        cout << year << " is a leap year.";
+    else
+        cout << year << " is not a leap year.";
+        cout << "Reversed string: " << reverseString(str) << endl;
+    int X = 1;  // Replace with your value
+    int Y = 2;  // Replace with your value
+    int Z = 3; 
+        cout << "Maximum number is : " << findMax(X, Y, Z) << " among "<<X<<" "<<Y<<" "<<Z<< " "<< endl;
+    return 0;
+}
+
+
+
+
