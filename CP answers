@@ -1,1 +1,99 @@
-ADD Competitive Programming answers here.
+#Q1. WAP  which multiplies two integers  A and B . 
+A = int(input("Enter the first integer :"))
+B = int(input("Enter the second integer : "))
+answer = A * B
+print(f"The product of {A} and {B} is: {answer}")
+#Q2. WAP which finds whether number is EVEN or ODD.
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print(f"{num} is an even number")
+else:
+    print(f"{num} is an odd number")
+#Q3. WAP which find factorial of a number N.
+n= int(input("Enter a number: "))
+fact = 1
+for i in range(1, n + 1):
+    fact *= i
+print(f"The factorial of {n} is: {fact}")
+#Q4. WAP which counts the number of vowels in a string.
+string = input("Enter a string:").upper()
+vowels = "AEIOU"
+count = 0
+for char in string:
+    if char in vowels:
+        count += 1
+print(f"The number of vowels in the string is: {count}")
+#Q5. WAP which finds maximum number in an array.
+input_numbers = input("Enter numbers separated by spaces: ")
+numbers = [int(x) for x in input_numbers.split()]
+maximum__num = max(numbers)
+print(f"The maximum number in the array is: {maximum__num}")
+#Q6. WAP which finds minimum number in an array.
+input_numbers = input("Enter numbers separated by spaces: ")
+numbers = [int(x) for x in input_numbers.split()]
+minimum__num = min(numbers)
+print(f"The minimum number in the array is: {minimum__num}")
+#Q7. WAP to swaps 2 integers A and B.
+A = int(input("Enter A: "))
+B = int(input("Enter  B: "))
+A, B = B, A
+print(f"After swapping, A is {A} and B is {B}")
+#Q8. WAP which checks that a given year is leap year or not (hint: After Every four year)
+year = int(input("Enter a year: "))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(f"{year} is a leap year.")
+else:
+    print(f"{year} is not a leap year.")
+#Q9. WAP which reverse a string S.
+S = input("Enter a string: ")
+reversed_string = S[::-1]
+print(f"The reversed string is: {reversed_string}")
+#Q10. WAP to find maximum Number among three integers ( A,B and C)
+A = int(input("Enter the value of A: "))
+B = int(input("Enter the value of B: "))
+C = int(input("Enter the value of C: "))
+maximum_num = max(A, B, C)
+print(f"The maximum number among {A}, {B}, and {C} is: {maximum_num}")
+"""5 MCQ’s questions: 
+
+Q1. What is the time complexity of an algorithm that loops through an array of size N once?
+A) O(N)
+B) O(log N)
+C) O(N^2)
+D) O(1)
+Answer:A
+Q2. Which data structure follows the Last In, First Out (LIFO) principle?
+A) Queue
+B) Stack
+C) Linked List
+D) Heap
+Answer:B
+Q3. What is the purpose of the "break" statement in a loop?
+A) Skip to the next iteration
+B) Exit the loop
+C) Restart the loop
+D) Pause the loop temporarily
+Answer:B
+Q4. In a binary search, what is the key characteristic of the array being searched?
+A) Must be sorted
+B) Must be reversed
+C) Must be shuffled
+D) Must be unsorted
+Answer:A
+Q5. What is the time complexity of an algorithm?
+A) The amount of memory it uses
+B) The number of operations it performs
+C) The execution speed on a specific machine
+D) The input size the algorithm can handle 
+Answer:B
+"""
+
+
+
+
+
+
+
+
+
+

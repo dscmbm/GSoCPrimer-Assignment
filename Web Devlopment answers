@@ -1,1 +1,95 @@
-ADD Web Development Answers here.
+<!-- 1. Create a checkbox input feild in HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkbox Example</title>
+</head>
+<body>
+
+  <label for="checkbox">Check me:</label>
+  <input type="checkbox" id="checkbox" name="checkbox">
+
+</body>
+</html>
+<!-- 2. Write an HTML code to display the below preformatted text
+  Text in a pre element
+  	is displayed in a fixed-width
+  font, and it preserves
+  both      spaces and
+  line breaks-->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preformatted Text Example</title>
+</head>
+<body>
+
+  <pre>
+    Text in a pre element
+      is displayed in a fixed-width
+    font, and it preserves
+    both      spaces and
+    line breaks
+  </pre>
+
+</body>
+</html>
+<!-- 3. How to create a hyperlink that opens in a new tab?-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open in New Tab Example</title>
+</head>
+<body>
+
+  <a href="https://www.example.com" target="_blank">Visit Example.com in a new tab</a>
+
+</body>
+</html>
+<!-- 4. Implement a basic form with a text input and a submit button.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Form Example</title>
+</head>
+<body>
+
+  <form action="/submit" method="post">
+    <!-- Text Input -->
+    <label for="inputText">Enter Text:</label>
+    <input type="text" id="inputText" name="inputText" placeholder="Type something..." required>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
+<!-- 5. Create an unordered list containing items - coffee, tea, milk.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unordered List Example</title>
+</head>
+<body>
+
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+</body>
+</html>
+

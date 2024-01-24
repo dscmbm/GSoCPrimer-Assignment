@@ -1,1 +1,130 @@
-ADD Artificial Intelligence answers here.
+#ADD Artificial Intelligence answers here.
+#1	Write a Python function that checks whether a given number is prime or not.
+def is_prime(number):
+    if number <= 1:
+        return False
+    for i in range(2, int(number**0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
+user_input = int(input("Enter a number: "))
+if is_prime(user_input):
+    print(f"{user_input} is a prime number.")
+else:
+    print(f"{user_input} is not a prime number.")
+#2	Write a Python function that takes a string as input and returns the reversed version of the string.
+def reverse_string(input_string):
+    return input_string[::-1]
+user_input = input("Enter a string: ")
+reversed_str = reverse_string(user_input)
+print(f"The reversed string is: {reversed_str}")
+#3	Import Pandas and create a Data Frame with two columns - "Name" and "Age" - containing data for two individuals.
+import pandas as pd
+data = {
+    "Name": ["Person1", "Person2"],
+    "Age": [25, 30]
+}
+
+df = pd.DataFrame(data)
+print(df)
+#4	Import NumPy and create a 3x3 matrix with values ranging from 1 to 9.
+import numpy as np
+matrix = np.arange(1, 10).reshape(3, 3)
+print(matrix)
+#5	Write a Python function that takes a dictionary as input and returns the keys in alphabetical order.
+def sorted_keys(input_dict):
+    return sorted(input_dict.keys())
+sample_dict = {"apple": 3, "banana": 1, "orange": 2}
+result = sorted_keys(sample_dict)
+print(f"Sorted keys: {result}")
+#6	Write a Python function that calculates the factorial of a given number. Using recursion
+def factorial_recursive(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial_recursive(n - 1)
+user_input = int(input("Enter a number: "))
+result = factorial_recursive(user_input)
+print(f"The factorial of {user_input} is: {result}")
+#7	Given a NumPy array arr, write code to find the mean and standard deviation of the array.
+import numpy as np
+arr = np.array([1, 2, 3, 4, 5])
+mean_value = np.mean(arr)
+std_deviation = np.std(arr)
+print(f"Mean: {mean_value}")
+print(f"Standard Deviation: {std_deviation}")
+#8	Given a Pandas DataFrame df with columns "A" and "B", write code to calculate the sum of column "A" for rows where column "B" is greater than 10.
+import pandas as pd
+data = {
+    "A": [1, 2, 3, 4, 5],
+    "B": [15, 8, 12, 5, 18]
+}
+
+df = pd.DataFrame(data)
+sum_column_A = df[df['B'] > 10]['A'].sum()
+print(f"The sum of column 'A' for rows where column 'B' is greater than 10 is: {sum_column_A}")
+#9	Given a trained machine learning model, a feature matrix, and corresponding labels , write code to calculate the accuracy of the model on the test data.
+from sklearn.metrics import accuracy_score
+
+# Assuming you have a trained model named 'model', a feature matrix 'X_test', and corresponding labels 'y_test'
+# Replace 'model', 'X_test', and 'y_test' with your actual model and test data
+
+# Make predictions on the test data
+y_pred = model.predict(X_test)
+
+# Calculate the accuracy
+accuracy = accuracy_score(y_test, y_pred)
+
+# Print the result
+print(f"Accuracy of the model on the test data: {accuracy}")
+#10	Write a Python function that removes duplicates from a given list and returns a new  list with unique elements.
+def remove_duplicates(input_list):
+    return list(set(input_list))
+original_list = [11, 20, 20, 35, 48, 48, 53]
+unique_list = remove_duplicates(original_list)
+print(f"Original List: {original_list}")
+print(f"List with Unique Elements: {unique_list}")
+"""
+11	What is the purpose of the try, except, and finally blocks in Python?
+a) To define a function
+b) To handle errors and exceptions
+c) To create a loop
+d) To define a class
+Answer:B
+12   How do you select the first three rows of a Pandas DataFrame df?
+a) df.head(3)
+b) df.first(3)
+c) df[:3]
+d) df.select(3)
+Answer:A
+13 What metric is commonly used to evaluate classification models in Scikit-Learn?
+a) Mean Squared Error (MSE)
+b) R-squared
+c) Accuracy
+d) F1 Score
+Answer:C
+14 Consider the following Python code:
+text = "Hello, World!"
+result = text.split(", ")
+Which statements about the variable result are correct?
+a) result will be a list with two elements: ["Hello", "World!"].
+b) result will be a string: "Hello, World!".
+c) result will be a list with three elements: ["Hello", " World!"].
+d) result will be a list with one element: ["Hello, World!"].
+Answer:A
+15 Consider the following Python function:
+def manipulate_list(lst):
+    return [x * 2 for x in lst if x % 3 == 0]
+Which statements about the function are correct?
+a) The function doubles every element in the input list.
+b) The function filters out elements that are not divisible by 3.
+c) The function returns a new list.
+d) The function modifies the input list in-place.
+Answer:B,C
+"""
+
+
+
+
+
+
