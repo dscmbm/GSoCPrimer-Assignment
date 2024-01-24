@@ -1,1 +1,88 @@
 ADD Web Development Answers here.
+
+-:HTML:-
+ANS 1: 
+<input type="checkbox" name="agree" id="agree_checkbox" />
+
+ANS 3: 
+<a href="http://google.com" target="_blank" >click here</a>
+
+ANS 4: 
+<form onsubmit="">
+    <input type="text" name="" id="say_somthing" placeholder="Say somthing">
+    <button type="submit">Submit</button>
+</form>
+
+ANS 5: 
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+
+
+-:CSS:-
+ANS 1: 
+class_name:hover {
+    color: red;
+}
+class_name:active {
+    color: blue;
+}
+
+ANS 2: 
+<!-- priorities top to bottom  -->
+1>Inline
+2>Internal 
+3>External
+<!-- Command that is used to make a less prior property tha most priority one  -->
+!important
+font-size: 20px !important;
+
+ANS 3: 
+<!-- three different ways to hide element in css -->
+1> visibility: hidden;
+2> position: absolute; z-index: -100;
+3> transform: scale(0);
+
+ANS 4: 
+<!-- width of given div will -->
+    width = 310px
+    padding(20px) = 20px + 20px = 40px 
+    border(5px)  = 5px + 5px = 10px
+
+    final width : 360px
+
+ANS 5: 
+<!-- CSS to control image repetation -->
+background-repeat: no-repeat;
+
+
+-:JavaScript:-
+ANS 1: 
+syntax: const variable_name = document.getElementById('Id_name_of_element')
+eg:
+const btn = document.getElementById('btn1')
+
+ANS 2: 
+btn.addEventListner('click', ()=> {
+    <!-- code to imjjplement  -->
+})
+
+ANS 3: 
+<!-- timeout function  -->
+setTimeout(() => {
+        console.log("Hello");
+}, 2000);
+
+ANS 4: 
+<!-- output of the function  -->
+2
+4
+3
+1
+
+ANS 5:
+for(const key in object){
+        console.log(object[key]);
+}
