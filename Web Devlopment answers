@@ -1,1 +1,165 @@
 ADD Web Development Answers here.
+
+// first section Answers
+
+Answers 1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheack-box</title>
+</head>
+<body>
+    <div class="chackBox-field" >
+        <div>
+            <input type="checkbox" id="check1"/>
+            <label for="check1">First option</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="check1"/>
+            <label for="check1">Second option</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="check1"/>
+            <label for="check1">Third option</label>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+
+Answers 2
+
+
+Answers 3
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button id="submitBtn" type="submit" style="background-color: red; border-radius: 20px; padding: 10px 10px; border: none ;">
+            <a href="https://www.google.com/" style="text-decoration: none; color: white;">Click Here</a>
+        </button>
+    </div>
+</body>
+</html>
+
+Answers 4
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; ">
+        <input type="text" placeholder="first name" style="padding: 10px 2px; margin: 10px; border-radius: 5px; outline: none; ">
+        <input type="text" placeholder="first name" style="padding: 10px 2px; margin: 10px; border-radius: 5px; outline: none; ">
+        <button id="submitBtn" type="submit" style="background-color: red; border-radius: 20px; padding: 10px 10px; border: none ; width: 20%; justify-content: center; cursor: pointer;">
+            submit
+        </button>
+        
+    </div>
+</body>
+</html>
+
+Answers 5
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Create an unordered list containing items - coffee, tea, milk -->
+    <div class="list-div" style="font-size: 30px; ">
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<<< Js section > 
+
+Answers 1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button
+    id="btn"
+    >Click here</button>
+<script>
+    const btnElement = document.getElementById('btn')
+</script>
+</body>
+</html>;
+
+Answers 2
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button
+    id="btn"
+    onclick="onClickHandar"
+    >Click here</button>
+<script>
+    const btnElement = document.getElementById('btn')
+    btnElement.onclick('click' , alert("hii you are click on btn"));
+</script>
+</body>
+</html>
+
+Answers 3
+
+setTimeout(() => {
+    console.log("hello world!!");
+},2000)
+
+Answers 4
+2
+4
+3
+1
+
+1 is bound in time 
+
+Answers 5
+
+key1
+value1
+key2
+value2
+key3
+value3
+
+
+
