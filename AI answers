@@ -1,1 +1,100 @@
-ADD Artificial Intelligence answers here.
+//Answer 1
+
+def is_prime(number):
+    if number < 2:
+        return False
+    for i in range(2, int(number**0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
+
+//Answer 2
+
+def reverse_string(input_str):
+    return input_str[::-1]
+
+//Answer 3
+
+import pandas as pd
+
+data = {'Name': ['Person1', 'Person2'],
+        'Age': [25, 30]}
+
+df = pd.DataFrame(data)
+
+//Answer 4
+
+import numpy as np
+
+matrix = np.arange(1, 10).reshape(3, 3)
+
+//Answer 5
+
+def keys_in_alphabetical_order(input_dict):
+    return sorted(input_dict.keys())
+
+//Answer 6
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+//Answer 7
+
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+
+mean_value = np.mean(arr)
+std_deviation = np.std(arr)
+
+//Answer 8
+
+import pandas as pd
+
+# Assuming df is your DataFrame
+sum_column_A = df.loc[df['B'] > 10, 'A'].sum()
+
+//Answer 9
+
+from sklearn.metrics import accuracy_score
+
+# Assuming your model is already trained
+model = # Trained machine learning model
+X_test = # Feature matrix for testing
+y_test = # True labels for testing
+
+# Predict labels using the trained model
+y_pred = model.predict(X_test)
+
+# Calculate the accuracy of the model
+accuracy = accuracy_score(y_test, y_pred)
+print("Accuracy:", accuracy)
+
+//Answer 10
+
+def remove_duplicates(input_list):
+    return list(set(input_list))
+
+//Answer 11
+
+(b) To handle errors and exceptions
+
+//Answer 12
+
+(a) df.head(3)
+
+//Answer 13
+
+(c) Accuracy
+
+//Anwswer 14
+
+(a) result will be a list with two elements: ["Hello", "World!"].
+
+//Answer 15
+
+(b) The function filters out elements that are not divisible by 3.
+(c) The function returns a new list.
