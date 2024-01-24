@@ -1,5 +1,7 @@
 ADD Web Development Answers here.
+HTML:
 1. <input type="checkbox" name="checkbox" id="checkbox"/>
+
 2.<pre>
     Text in a pre element
   	is displayed in a fixed-width
@@ -7,3 +9,61 @@ ADD Web Development Answers here.
   both      spaces and
   line breaks
 </pre>
+
+4. 
+<form>
+    <input type="text" name="text" id="text"/>
+    <button type="submit">Submit</button>
+</form>
+
+5.
+<ul>
+    <li>Coffee</li>
+    <li>Milk</li>
+    <li>Tea</li>
+</ul>
+
+CSS:
+1. (i)
+ button:hover{
+    background-color:black;
+    text:white;
+}
+(ii).
+input:focus{
+    outline-color: black;
+}
+
+2. 
+CSS  Priorites 
+(i)Inline Css
+(ii)Internal CSS
+(iii)outline Css
+!important command is used to make a less prior property the most priority one
+
+3. 
+(i)display:none;
+(ii)visibility:hidden;
+(iii)
+
+4. 
+width of the div will be 315px
+
+5. background-repeat:no-repeat
+
+JavaScript:
+1. let h1 = document.getElementById("heading");
+
+2. button.addEventListener("click",()=>{
+    console.log("hello world");
+})
+
+3. setTimeOut(()=>{
+    console.log();
+},2000);
+
+4. Output of the code: 2 4 3 1
+
+5. myObject.forEach((value) => {
+    console.log(value);
+})
