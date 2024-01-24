@@ -1,1 +1,268 @@
 ADD Competitive Programming answers here.
+ADD Competitive Programming answers here.
+Coding questions 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+q1 
+#include<stdio.h> 
+int main() 
+{ 
+ int A,B,product; 
+ printf("Enter two numbers A and B.\n\nA:"); 
+ scanf("%d",&A); 
+ printf("\nB:"); 
+ scanf("%d",&B); 
+ product=A*B; 
+ printf("\nProduct of A and B: %d",product); 
+ return  0; 
+} 
+ 
+ 
+ 
+ 
+ 
+q2 
+#include <stdio.h> 
+int main() { 
+    int num; 
+    printf("Enter an integer: "); 
+    scanf("%d", &num); 
+ 
+    // true if num is perfectly divisible by 2 
+    if(num % 2 == 0) 
+        printf("%d is even.", num); 
+    else 
+        printf("%d is odd.", num); 
+ 
+    return 0; 
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+q3 
+#include<stdio.h> 
+ 
+int main(){ 
+ 
+    int x,fact=1,n; 
+ 
+    printf("Enter a number to find factorial: "); 
+    scanf("%d",&n);  
+ 
+    for(x=1;x<=n;x++) 
+        fact=fact*x;  
+ 
+    printf("Factorial of %d is: %d",n,fact); 
+ 
+    return 0; 
+ 
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+q4 
+#include <stdio.h> 
+int main() 
+{ 
+  int c = 0, count = 0; 
+  char s[1000]; 
+  printf("Input a string\n"); 
+  gets(s); 
+  while (s[c] != '\0') { 
+    if (s[c] == 'a'  s[c] == 'A'  s[c] == 'e'  s[c] == 'E'  s[c] == 'i'  s[c] == 'I'  s[c] =='o'  s[c]=='O'  s[c] == 'u' || s[c] == 'U') 
+      count++; 
+    c++; 
+  } 
+  printf("Number of vowels in the string: %d", count); 
+  return 0; 
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+q5 
+#include <stdio.h> 
+ 
+int main() 
+{     
+    int array[100], maximum, size, c, location = 1; 
+ 
+    printf("Enter the number of elements in array\n"); 
+    scanf("%d", &size); 
+ 
+    printf("Enter %d integers\n", size); 
+ 
+    for (c = 0; c < size; c++) 
+        scanf("%d", &array[c]); 
+ 
+    maximum = array[0]; 
+ 
+    for (c = 1; c < size; c++) 
+    { 
+        if (array[c] > maximum) 
+        { 
+                maximum  = array[c]; 
+                location = c+1; 
+        } 
+    } 
+ 
+    printf("Maximum element is present at location %d and it's value is %d.\n", location, maximum); 
+    return 0;     
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+q6 
+#include <stdio.h> 
+ 
+int main()  
+    {     
+    int array[100], minimum, size, c, location = 1; 
+ 
+    printf("Enter the number of elements in array\n"); 
+    scanf("%d",&size); 
+ 
+    printf("Enter %d integers\n", size); 
+ 
+    for ( c = 0 ; c < size ; c++ ) 
+        scanf("%d", &array[c]);     
+ 
+    minimum = array[0]; 
+ 
+    for ( c = 1 ; c < size ; c++ )  
+    { 
+        if ( array[c] < minimum )  
+        { 
+            minimum = array[c]; 
+            location = c+1; 
+        } 
+    }  
+ 
+    printf("Minimum element is present at location %d and it's value is %d.\n", location, minimum); 
+    return 0; 
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+q7 
+#include<stdio.h>   
+ int main()     
+{     
+int a=10, b=20;       
+printf("Before swap a=%d b=%d",a,b);       
+a=a+b;//a=30 (10+20)     
+b=a-b;//b=10 (30-20)     
+a=a-b;//a=20 (30-10)     
+printf("\nAfter swap a=%d b=%d",a,b);     
+return 0;   
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+q8 
+#include <stdio.h> 
+int main() { 
+   int year; 
+   printf("Enter a year: "); 
+   scanf("%d", &year); 
+ 
+   if (year % 400 == 0) { 
+      printf("%d is a leap year.", year); 
+   } 
+   else if (year % 100 == 0) { 
+      printf("%d is not a leap year.", year); 
+   } 
+   else if (year % 4 == 0) { 
+      printf("%d is a leap year.", year); 
+   } 
+   else { 
+      printf("%d is not a leap year.", year); 
+   } 
+   return 0; 
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+q9 
+#include <stdio.h>   
+#include <string.h>   
+int main()   
+{   
+    char str[40];  
+    printf (" \n Enter a string to be reversed: ");   
+    scanf ("%s", str);   
+ 
+    printf (" \n After the reverse of a string: %s ", strrev(str));   
+    return 0;   
+}  
+ 
+ 
+ 
+ 
+ 
+ 
+q10 
+#include <stdio.h> 
+ int main() 
+{ 
+    int A, B, C;  
+    printf("Enter the numbers A, B and C:\n\nA:"); 
+    scanf("%d", &A); 
+    printf("\nB:"); 
+    scanf("%d", &B); 
+     printf("\nC:"); 
+    scanf("%d", &C); 
+ 
+   if (A >= B && A >= C) 
+        printf("A:%d is the largest number.", A); 
+ 
+    else if (B >= A && B >= C) 
+        printf("\nB:%d is the largest number.", B); 
+ 
+    else 
+        printf("\nC:%d is the largest number.", C); 
+ 
+    return 0; 
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MCQs 
+q1 A 
+q2 B 
+q3 B
+q4 A 
+q5 D
