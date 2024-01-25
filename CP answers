@@ -1,1 +1,138 @@
 ADD Competitive Programming answers here.
+Ques 1.cp
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    cout<<"Enter two numbers a and b"<<endl;
+    cin>>a>>b;
+    c=a*b;
+    cout<<"multiplication of a and b is"<<c<<endl;
+}
+
+Ques 2.cp
+#include<iostream>
+using namespace std;
+int main(){
+    int num;
+    cout<<"Enter the number"<<endl;
+    cin>>num;
+    if(num%2==0){
+        cout<<"Number is even"<<endl;
+    }
+    else{
+        cout<<"Number is odd"<<endl;
+    }
+}
+Ques 3.cp
+#include<iostream>
+using namespace std;
+int main(){
+    int n,fact=1;
+    cout<<"Enter the number"<<endl;
+    cin>>n;
+    for(int i=1;i<n;i++){
+        fact=fact*i;
+    }
+    cout<<"Factorial of "<<n<<" is "<<fact<<endl;
+    return 0;
+}
+Ques 7.cp
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    cout<<"Enter two number to be swapped"<<endl;
+    cin>>a>>b;
+    c=a;
+    a=b;
+    b=c;
+    cout<<"After swapping the numbers "<<a<<" "<<b<<endl;
+}
+Ques 10.cp
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    cout<<"Enter three numbers"<<endl;
+    cin>>a>>b>>c;
+    //if a is greater than b and c
+    if(a>b && a>c)
+        cout<<"Max is "<<a<<endl;
+    //if b is greater than c and a
+    else if(b>c&&b>a)
+        cout<<"Max is "<<b<<endl;
+    //if c is greater than a and b
+    else
+        cout<<"Max is "<<c<<endl;
+}
+
+MCQ'S.cp
+Ques 1 a) O(n)
+Ques 2 B)stack
+ques 3 b)exit the loop
+ques 4 a)must be sorted
+ques 5 c)
+
+
+
+ques 4.cp
+
+#include<iostream>
+using namespace std;
+int main()
+{
+  int c = 0, count = 0;
+  char s[1000];
+  cout<<"Input a string"<<endl;
+  gets(s);
+
+  while (s[c] != '\0') {
+    if (s[c] == 'a' || s[c] == 'A' || s[c] == 'e' || s[c] == 'E' || s[c] == 'i' || s[c] == 'I' || s[c] =='o' || s[c]=='O' || s[c] == 'u' || s[c] == 'U')
+      count++;
+    c++;
+  }
+  cout<<"Number of vowels in the string:"<<count<<endl;
+  return 0;
+}
+
+Ques 9.cp
+#include<iostream>
+using namespace std;
+int main(){
+    string str="My name is Gunjan";
+    reverse(str.begin(),str.end());
+    cout<<"After reverse "<<str<<endl;
+}
+
+Ques 8.cp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  int year;
+  cout << "Enter a year: ";
+  cin >> year;
+
+  // leap year if perfectly divisible by 400
+  if (year % 400 == 0) {
+    cout << year << " is a leap year.";
+  }
+  // not a leap year if divisible by 100
+  // but not divisible by 400
+  else if (year % 100 == 0) {
+    cout << year << " is not a leap year.";
+  }
+  // leap year if not divisible by 100
+  // but divisible by 4
+  else if (year % 4 == 0) {
+    cout << year << " is a leap year.";
+  }
+  // all other years are not leap years
+  else {
+    cout << year << " is not a leap year.";
+  }
+
+  return 0;
+}
