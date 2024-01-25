@@ -1,1 +1,218 @@
 ADD Competitive Programming answers here.
+//Q 1.
+#include<iostream>
+using namespace std;
+int main(){
+int a,b;
+cin>>a>>b;
+int r=a*b;
+cout<<"multiple of 2 number is:-"<<r<<endl;
+
+}
+
+//Q.2
+#include<iostream>
+using namespace std;
+int main(){
+    int a;
+    cout<<"enter a number"<<endl;
+   cin>>a;
+   if(a%2==0){
+    cout<<"number is even"<<endl;
+   } 
+   else{
+    cout<<"nuber is odd"<<endl;
+   }
+   return 0;
+}
+
+//Q.3
+#include<iostream>
+using namespace std;
+int fact(int a){
+    if(a==0){
+        return 1;
+    }
+    return a*fact(a-1);
+}
+
+int main(){
+int a;
+cout<<"enter a number"<<endl;
+cin>>a;
+cout<<"factorial of number is :-"<<fact(a);
+
+}
+
+//Q.4
+#include<iostream>
+#include<string.h>
+using namespace std;
+
+int main(){
+	string s;
+	cin>>s;
+	int count;
+	int len=s.size();
+	
+	for(int i=0; i<len; i++){
+		if(s[i]=='a' || s[i]=='e' || s[i]=='i'|| s[i]=='o'|| s[i]=='u'){
+			
+			count++;
+		}
+		
+	}
+	
+	cout<<"vowal Number is"<<count;
+}
+
+//Q.5
+#include<iostream>
+using namespace std;
+int max(int arr[],int n){
+	int max,i;
+ 	max=arr[0];
+    for(i=1; i<n; i++)
+    {
+		   if(max<arr[i]){
+		    max=arr[i];   }    
+    }
+    
+
+    cout<<"maximum of array is "<<max;
+
+}
+
+
+int main(){
+    int n;
+    int arr[100];
+    cout<<"enter the size of arry";
+    cin>>n;
+    cout<<"enter the element of arry";
+    for(int i=0;i<n;i++){
+         cin>>arr[i];
+    }
+    max(arr,n);
+}
+
+//Q.6
+#include <iostream>
+using namespace std;
+
+int min(int arr[], int n) {
+    int min = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] < min) { 
+            min = arr[i];   
+        }
+    }
+    return min;
+}
+
+int main() {
+    int n;
+    int arr[100];
+    cout << "Enter the size of the array: ";
+    cin >> n;
+    cout << "Enter the elements of the array: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    int minimum = min(arr, n); 
+    cout << "The minimum of the array is " << minimum << endl;
+    return 0;
+}
+
+//Q 7.
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,temp;
+    cout<<"enter numbers: ";
+    cin>>a>>b;
+    cout<<"before swapped: "<<endl;
+    cout<<a<<" "<<b<<endl;
+
+    temp=a;
+    a=b;
+    b=temp;
+
+    cout<<"after swapped: "<<endl;
+    cout<<a<<" "<<b<<endl;
+}
+
+//Q8.
+#include<iostream>
+usin namespace std;
+int main(){
+    int year;
+    cout<<"enter year: "<<endl;
+    cin>>year;
+
+    if(year%4==0){
+        cout<<"leap year"<<endl;
+    }
+    else if(year%100==0){
+        cout<<"not a leap year"<<endl;
+    }
+    else if(year%400==0){
+        cout<<"leap year"<<endl;
+    }
+    else{
+        cout<<"leap year"<<endl;
+  }
+}
+//Q.9
+#include<iostream>
+using namespace std;
+void reverseStr(string& str)
+{
+	int n = str.length();
+
+	
+	for (int i = 0; i < n / 2; i++)
+		swap(str[i], str[n - i - 1]);
+}
+
+int main()
+{
+	string str = "gsoc";
+	reverseStr(str);
+	cout << str;
+	return 0;
+}
+
+//Q.10
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    cin>>a>>b>>c;
+    if(a>b && b>c){
+        cout<<a;
+    }
+    else if(b>c && b>a){
+        cout<<b;
+    }
+    else{
+        cout<<c;
+    }
+}
+
+//Mcq answer:-
+
+Q.1
+A) O(N)
+
+Q.2
+B) Stack
+
+Q.3
+B) Exit the loop
+
+Q.4
+A) Must be sorted
+
+Q.5
+B) The number of operations it performs
