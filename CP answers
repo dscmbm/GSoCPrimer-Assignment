@@ -1,1 +1,127 @@
 ADD Competitive Programming answers here.
+Que-1.cp
+#include<iostream>
+using namespace std;
+int main()
+{
+    int A,B,C;
+    cout<<"enter two numbers:";
+    cin>>A>>B;
+    C = A*B;
+    cout<<"multiplication of two integers ="<<C<<endl;
+    return 0;
+
+}
+Que-2 .cp
+#include<iostream>
+using namespace std;
+int main()
+{
+    int A;
+    cout<<"enter number:";
+    cin>>A;
+    if(A%2==0)
+        cout<<"number is even"<<endl;
+    else
+        cout<<"number is odd"<<endl;    
+
+    return 0;
+    
+}
+Que-3.cp
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,fact=1;
+    cout<<"enter the number"<<endl;
+    cin>>n;
+    for(int i=1;i<n;i++)
+    {
+        fact = fact *i;
+    }
+    cout<<"factorial of the "<<n<<"is"<<fact<<endl;
+    return 0;
+}
+Que-7.cp
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cout<<"enter two numbers"<<endl;
+    cin>>a>>b;
+    c=a;
+    a=b;
+    b=c;
+    cout<<"after swapping a ="<<a<<"and b ="<<b<<endl;
+    return 0;
+
+}
+Que=8.cp
+#include<iostream>
+using namespace std;
+int main()
+{
+    int year;
+    cout<<"enter the year";
+    cin>>year;
+    if(year%4==0)
+        cout<<"year is a leap year"<<endl;
+    else if(year%100==0)
+        cout<<"year is a leap year"<<endl;
+    else if(year%400!=0)
+        cout<<"year is a leap year"<<endl;
+    else 
+        cout<<"year is not a leap year"<<endl;
+    return 0;   
+}
+Que-9.cp
+#include<iostream>
+#include<algorithm>
+#include<string>
+using namespace std;
+int main()
+{
+    string str="my name is archana";
+    reverse(str.begin(),str.end());
+    cout<<str<<endl;
+    return 0;
+    
+}
+Que-10.cp
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a ,b,c;
+    cout<<"enter the three numbers"<<endl;
+    cin>>a>>b>>c;
+    if(a>=b && a>=c)
+        cout<<"a is max"<<a<<endl;
+    else if(b>=a&&b>=c)
+        cout<<"b is max"<<b<<endl;
+    else
+        cout<<"c is max"<<c<<endl;
+        return 0;
+
+}
+MCQ-Que-1.
+option A :
+O(N)
+
+MCQ-Que-2.
+option B :
+stack
+
+MCQ-Que-3.
+option B :
+exit the loop
+
+MCQ-Que-4.
+option A :
+must be sorted
+
+MCQ-Que-5.
+option c :
+The execution speed on a specific machine
