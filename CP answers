@@ -1,1 +1,105 @@
-ADD Competitive Programming answers here.
+//ADD Competitive Programming answers here.
+//cp
+#include<bits/stdc++.h>
+using namespace std;
+int factorial(int m){
+    if(n==0 or n==1){
+        return 1;
+    }
+    else{
+        return n*(n-1);
+    }
+}
+// int countstring(const string& inpput string){
+//     int count=0;
+//     bool in number=false;
+//     for(char ch : inputstring){
+//         if(isdigit(ch)){
+//             if(!innumber){
+//                 innumber=true;
+//                 coount++;
+//             }
+
+//         }
+//         else{
+//             innumber=false;
+//         }
+//     }
+//     return count;
+// }
+int main(){
+    //Q1.
+    int a=10,b=10;
+    cout<<a*b<<endl;
+    //Q2
+    int n;
+    cout<<"enter no"<<endl;
+    cin>>n;
+    if(n%2=0){
+        cout<<"no is even"<<endl;
+    }
+    else{
+        cout<<"no is odd"<<endl;
+    }
+//Q3
+    int m;
+    cin>>m;
+    int t=factorial(m);
+    cout<<t<<endl;
+    //Q4
+    // string inputstring;
+    // cout<<"enter string"<<endl;
+    // getline(cin,inputstring);
+    // int numbercount=countnumbers(inputstring);
+    // cout<<""
+    //Q5
+    int arr[]={3,7,1,9,5};
+    int arraysize=sizeof(arr)/sizeof(arr[0]);
+    int maxnumber=max_element(arr,arr+arrsize);
+    cout<<maxnumber<<endl;
+    //Q6
+     int arr[]={3,7,1,9,5};
+    int arraysize=sizeof(arr)/sizeof(arr[0]);
+    int minnumber=min_element(arr,arr+arrsize);
+    cout<<minnumber<<endl;
+    //Q7
+    int x,y;
+    cout<<"enter two ele"<<endl;
+    cin>>x;
+    cin>>y;
+    int temp=x;
+    x=y;
+    y=temp;
+    cout<<x<<"  "<<y<<endl;
+    //Q8
+    int year;
+    cout<<"enter year"<<endl;
+    cin>>year;
+    bool isleapyear=(year%4==0 && year%100==0);
+    cout<<(isleapyear?"laep year" : "not a leap year")<<endl;
+    //Q9
+    string str;
+    cout<<"enter a string"<<endl;
+    cin>>str;
+    reverse(str.begin(),str.end());
+    cout<<str<<endl;
+//Q10
+    int l,k,j;
+    cout<<"enter int"<<endl;
+    cin>>l>>k>>j;
+    int maxnumber=(l>k) ? (l>j ? l : j) : (k>j ? k:j);
+    cout<<maxnumber<<endl;
+}
+//MCQ ANSWER
+//Q1.
+//O(N)
+//Q2.
+//STACK
+//Q3.
+//EXIT THE LOOP
+//Q4.
+//MUST BE SORTED
+//Q5.
+//THE NUMBER OF OPERATIONS IT PERFORMS
+
+

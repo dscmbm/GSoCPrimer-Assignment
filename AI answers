@@ -1,1 +1,72 @@
-ADD Artificial Intelligence answers here.
+#q1.
+def is_prime(number):
+    if number < 2:
+        return False
+    for i in range(2, int(number**0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
+    #q2
+def reverse_string(input_str):
+    return input_str[::-1]
+#q3
+import pandas as pd
+
+data = {'Name': ['Person1', 'Person2'],
+        'Age': [25, 30]}
+
+df = pd.DataFrame(data)
+#4
+import numpy as np
+
+matrix = np.arange(1, 10).reshape(3, 3)
+#5
+def sorted_keys(input_dict):
+    return sorted(input_dict.keys())
+#Q6
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+#q7
+    import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+
+mean_value = np.mean(arr)
+std_deviation = np.std(arr)
+#Q8
+sum_A = df[df['B'] > 10]['A'].sum()    
+#Q9
+from sklearn.metrics import accuracy_score
+
+# Assuming you have a trained model, feature matrix for testing, and true labels for testing
+model = # Trained machine learning model
+X_test = # Feature matrix for testing
+y_test = # True labels for testing
+
+# Calculate the accuracy of the model
+predicted_labels = model.predict(X_test)
+accuracy = accuracy_score(y_test, predicted_labels)
+
+print("Accuracy:", accuracy)
+#Q10
+def remove_duplicates(input_list):
+    return list(set(input_list))
+#Q11
+#To handle errors and exceptions
+#Q12
+#df.head(3)
+#Q13
+# Accuracy
+#Q14
+#result will be a list with two elements: ["Hello", "World!"].
+#Q15
+#a) The function doubles every element in the input list.
+#b) The function filters out elements that are not divisible by 3.
+#c) The function returns a new list.
+#d) The function modifies the input list in-place.
+
+
+
