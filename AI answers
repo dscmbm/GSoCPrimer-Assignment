@@ -1,1 +1,88 @@
-ADD Artificial Intelligence answers here.
+#ADD Artificial Intelligence answers here.
+
+
+#Q.1
+defis_prime(number):
+    if number < 2:
+        return False
+    for i in range(2, int(number**0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
+
+
+#Q.2
+def reverse_string(input_str):
+    return input_str[::-1]
+
+
+#Q.3
+import pandas as pd
+
+data = {'Name': ['Person1', 'Person2'],
+        'Age': [25, 30]}
+
+df = pd.DataFrame(data)
+
+
+#Q.4
+import numpy as np
+
+matrix = np.arange(1, 10).reshape(3, 3)
+
+
+#Q.5
+def sorted_keys(input_dict):
+    return sorted(input_dict.keys())
+
+
+#Q.6
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+
+#Q.7
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+
+mean_value = np.mean(arr)
+std_deviation = np.std(arr)
+
+
+#Q.8
+sum_A = df[df['B'] > 10]['A'].sum()
+#Q.9
+from sklearn.metrics import accuracy_score
+
+predicted_labels = model.predict(feature_matrix)
+accuracy = accuracy_score(true_labels, predicted_labels)
+
+#Q.9
+from sklearn.metrics import accuracy_score
+
+# Assuming you have a trained model, feature matrix for testing, and true labels for testing
+model = # Trained machine learning model
+X_test = # Feature matrix for testing
+y_test = # True labels for testing
+
+# Calculate the accuracy of the model
+predicted_labels = model.predict(X_test)
+accuracy = accuracy_score(y_test, predicted_labels)
+
+print("Accuracy:", accuracy)
+
+
+#Q.10
+def remove_duplicates(input_list):
+    return list(set(input_list))
+
+#Q.11 (B) To handle errors and exceptions.
+#Q.12 (A) df.head(3).
+#Q.13 (C) accuracy
+#Q.14 (A) result will be a list with two elements: ["Hello", "World!"].
+#Q.15 (A), (B), (C), (D) All Correct...
+
