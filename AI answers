@@ -1,1 +1,17 @@
 ADD Artificial Intelligence answers here.
+
+1. 
+num=int(input("Enter the number: "))
+c=0
+for i in range(1,num+1): 
+    if num%i==0: c+=1 
+    else : continue 
+
+if c>2: print("The given number is not prime")
+else : print("The given number is prime")
+
+11. (b)
+12. (a)
+14. (a) 
+15. (b) 
+
