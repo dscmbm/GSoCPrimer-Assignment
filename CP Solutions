@@ -1,0 +1,189 @@
+//WAP : Sol 1
+#include<iostream>
+using namespace std;
+
+ int main() 
+{
+     int a,b;
+     cout<<"Enter two integers:"<<endl;
+     cin>>a>>b;
+     cout<<"Product of "<<a<<" and "<<b<<" is "<<a*b;
+ return 0; 
+ }
+
+//WAP : Sol 2
+#include<iostream>
+using namespace std;
+
+ int main() {
+     int n;
+     cout<<"Enter a number:"<<endl;
+     cin>>n;
+     (n&1)?(cout<<"Number is odd"):(cout<<"Number is even");
+ return 0; 
+ }
+
+//WAP : Sol 3
+#include<iostream>
+ using namespace std;
+ 
+ int factorial(int n)
+ {
+    if(n==0 || n==1)
+    {
+        return 1;
+    }
+    return n * factorial(n-1);
+ }
+
+  int main() 
+  {
+    
+     int n;
+     cout<<"Enter a number:"<<endl;
+     cin>>n;
+     cout<<"Factorial of your number is "<<factorial(n);
+  return 0; 
+  }
+
+//WAP : Sol 4
+#include<iostream>
+using namespace std;
+
+    bool isvowel(char a)
+    {
+        if(a == 'a' || a == 'e' || a== 'i' || a == 'o' || a == 'u' ||a == 'A' ||a == 'E' ||a == 'I' ||a == 'O' ||a == 'U')
+        {
+            return true;
+        }
+        return false;
+    }
+
+ int main() 
+ {
+     string s;
+     cout<<"Enter string"<<endl;
+     cin>>s;
+     int count = 0;
+     for(int i = 0 ; i<s.length() ; i++)
+     {
+        if(isvowel(s[i]))
+        {
+            count++;
+        }
+     }
+     cout<<"Number of vowels is "<<count;
+ return 0; 
+ }
+
+//WAP : Sol 5
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+ int main() {
+     int n;
+     cout<<"Enter number of elements in your array:"<<endl;
+     cin>>n;
+     int arr[n];
+     cout<<"Enter elements one by one:"<<endl;
+     for(int i = 0 ; i<n ; i++)
+     {
+        cin>>arr[i];
+     }
+     sort(arr , arr + n);
+     cout<<"Largest element is "<<arr[n-1];
+
+ return 0; 
+ }
+
+//WAP : Sol 6
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+ int main() {
+     int n;
+     cout<<"Enter number of elements in your array:"<<endl;
+     cin>>n;
+     int arr[n];
+     cout<<"Enter elements one by one:"<<endl;
+     for(int i = 0 ; i<n ; i++)
+     {
+        cin>>arr[i];
+     }
+     sort(arr , arr + n);
+     cout<<"Largest element is "<<arr[0];
+
+ return 0; 
+ }
+
+//WAP : Sol 7
+#include<iostream>
+using namespace std;
+
+ int main() {
+     int a,b;
+     cout<<"Enter two numbers"<<endl;
+     cin>>a>>b;
+     cout<<"Your first number is "<<a<<" and your second number is "<<b<<endl;
+     a = a+b;
+     b = a - b;
+     a = a-b;
+     cout<<"After Swapping"<<endl<<"Your first number is "<<a<<" and your second number is "<<b<<endl;
+ return 0; 
+ }
+
+//WAP : Sol 8
+#include<iostream>
+using namespace std;
+
+ int main() {
+     int n;
+     cout<<"Enter a year:"<<endl;
+     cin>>n;
+     if((n%4==0 && n%400==0) || (n%4==0 && n%100!=0 ))
+     {
+        cout<<"Year entered by you is a leap year";
+     }
+     else
+     {
+        cout<<"Year entered by you is not a leap year";
+     }
+ return 0; 
+ }
+
+//WAP : Sol 9
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+ int main() {
+     string s;
+     cout<<"Enter a string"<<endl;
+     cin>>s;
+     reverse(s.begin() , s.end());
+     cout<<"String after reversing is "<<s;
+ return 0; 
+ }
+
+//WAP Sol 10
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+ int main() {
+     int arr[3];
+     cout<<"Enter 3 numbers:"<<endl;
+     cin>>arr[0]>>arr[1]>>arr[2];
+     sort(arr , arr + 3);
+     cout<<"Maximum number among these three is "<<arr[2];
+ return 0; 
+ }
+
+//MCQs
+Sol 1. O(n)
+Sol 2. Stack
+Sol 3. Exit the loop
+Sol 4. Must be Sorted
+Sol 5. The execution speed on a specific machine
